@@ -1,0 +1,204 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "colorPrimary",
+      "value": "#FF1E2135"
+    },
+    {
+      "name": "colorPrimaryDark",
+      "value": "#FF1E2135"
+    },
+    {
+      "name": "primary_text",
+      "value": "#DE000000"
+    },
+    {
+      "name": "secondary_text",
+      "value": "#99000000"
+    },
+    {
+      "name": "file",
+      "value": "#FF757575"
+    },
+    {
+      "name": "folder",
+      "value": "#FF757575"
+    },
+    {
+      "name": "background",
+      "value": "#FFEEEEEE"
+    },
+    {
+      "name": "colorAccent",
+      "value": "#FFF04B4B"
+    },
+    {
+      "name": "primary",
+      "value": "#FF1E2135"
+    },
+    {
+      "name": "accent",
+      "value": "#FFF04B4B"
+    },
+    {
+      "name": "divider",
+      "value": "#FF808080"
+    },
+    {
+      "name": "accent_light",
+      "value": "#FFFF9800"
+    },
+    {
+      "name": "default_link_color",
+      "value": "#FF388E3C"
+    },
+    {
+      "name": "light__background",
+      "value": "#FFEEEEEE"
+    },
+    {
+      "name": "light__primary_text",
+      "value": "#DE000000"
+    },
+    {
+      "name": "light__secondary_text",
+      "value": "#99000000"
+    },
+    {
+      "name": "light__file",
+      "value": "#FF757575"
+    },
+    {
+      "name": "light__folder",
+      "value": "#FF757575"
+    },
+    {
+      "name": "dark__background",
+      "value": "#FF212121"
+    },
+    {
+      "name": "dark__primary_text",
+      "value": "#DDFFFFFF"
+    },
+    {
+      "name": "dark__secondary_text",
+      "value": "#FF9E9E9E"
+    },
+    {
+      "name": "dark__file",
+      "value": "#FF9E9E9E"
+    },
+    {
+      "name": "dark__folder",
+      "value": "#FF9E9E9E"
+    },
+    {
+      "name": "ic_launcher_background",
+      "value": "#FF636363"
+    },
+    {
+      "name": "white",
+      "value": "#FFFFFFFF"
+    },
+    {
+      "name": "black",
+      "value": "#FF000000"
+    },
+    {
+      "name": "grey",
+      "value": "#FF505050"
+    },
+    {
+      "name": "dark_grey",
+      "value": "#FF212121"
+    },
+    {
+      "name": "light_grey",
+      "value": "#FFC0C0C0"
+    },
+    {
+      "name": "lighter_grey",
+      "value": "#FFE0E0E0"
+    },
+    {
+      "name": "solarized_bg_dark",
+      "value": "#FF002B36"
+    },
+    {
+      "name": "solarized_bg_light",
+      "value": "#FFFCF5E4"
+    },
+    {
+      "name": "solarized_fg",
+      "value": "#FF657B83"
+    },
+    {
+      "name": "gruvbox_bg_dark",
+      "value": "#FF282828"
+    },
+    {
+      "name": "gruvbox_fg_dark",
+      "value": "#FFEBDBB2"
+    },
+    {
+      "name": "gruvbox_bg_light",
+      "value": "#FFFBF1C7"
+    },
+    {
+      "name": "gruvbox_fg_light",
+      "value": "#FF3C3836"
+    },
+    {
+      "name": "green_dark",
+      "value": "#FF00FF00"
+    },
+    {
+      "name": "green_light",
+      "value": "#FF00BB00"
+    },
+    {
+      "name": "sepia_fg_light__bg_dark",
+      "value": "#FF282828"
+    },
+    {
+      "name": "sepia_bg_light__fg_dark",
+      "value": "#FFEBDBB2"
+    },
+    {
+      "name": "nord_bg_dark",
+      "value": "#FF2E3440"
+    },
+    {
+      "name": "nord_fg_dark",
+      "value": "#FFECEFF4"
+    },
+    {
+      "name": "nord_bg_light",
+      "value": "#FFECEFF4"
+    },
+    {
+      "name": "nord_fg_light",
+      "value": "#FF2E3440"
+    },
+    {
+      "name": "link",
+      "value": "#FF1EA3FD"
+    },
+    {
+      "name": "transparent",
+      "value": "#00FFFFFF"
+    },
+    {
+      "name": "light_border",
+      "value": "#FFE0E0E0"
+    },
+    {
+      "name": "ic_shortcut_background",
+      "value": "#FFF5F5F5"
+    }
+  ]
+}

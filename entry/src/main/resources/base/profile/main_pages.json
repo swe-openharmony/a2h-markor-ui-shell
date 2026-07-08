@@ -1,0 +1,13 @@
+{
+  "src": [
+    "pages/MainPage",
+    "pages/IntroPage",
+    "pages/PermissionPage",
+    "pages/EditorPage",
+    "pages/ShareIntoPage",
+    "pages/SettingsPage",
+    "pages/SettingsSubPage",
+    "pages/ActionButtonSettingsPage",
+    "pages/Index"
+  ]
+}
