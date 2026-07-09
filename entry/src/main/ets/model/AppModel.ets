@@ -1,5 +1,5 @@
 /**
- * Markor A2H — central app model + AppStorage-backed mock-data layer.
+ * Markor A2H — central app model + AppStorage-backed shell state.
  *
  * backend in without changing the AppStorage keys the UI binds to.
  *
@@ -52,7 +52,7 @@ export class SK {
   static readonly PREFS: string = 'sk.prefs';
 }
 
-/** Routes — mirror labels.py ROUTE_* exactly. */
+/** Routes — used by the shell pages. */
 export class ROUTE {
   static readonly INTRO: string = 'pages/IntroPage';
   static readonly PERMISSION: string = 'pages/PermissionPage';

@@ -1,7 +1,7 @@
 /**
  * IntroPage — first-run intro slides (Markor / View / Share / ToDo / Done).
  *
- * Mirrors Android IntroActivity. Next/Skip/Done keys per labels.INTRO_*_KEY.
+ * First-run slides with stable Next, Skip, and Done action keys.
  */
 import router from '@ohos.router';
 import { SK, ROUTE } from '../model/AppModel';

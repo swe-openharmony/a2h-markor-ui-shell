@@ -1,8 +1,8 @@
 /**
  * MainPage — bottom-nav host (Files / To-Do / QuickNote / More).
  *
- * Mirrors Android MainActivity: ViewPager2 + BottomNavigationView + FAB.
- * NOTEBOOK_*_KEY). NewFileDialog is hosted here per labels.ROUTE_NEW_FILE_DIALOG.
+ * Bottom navigation host with Files / To-Do / QuickNote / More tabs and FAB.
+ * NewFileDialog is hosted here as a modal overlay.
  */
 import router from '@ohos.router';
 import { SK, TAB, ROUTE, FsEntry, TodoTask } from '../model/AppModel';

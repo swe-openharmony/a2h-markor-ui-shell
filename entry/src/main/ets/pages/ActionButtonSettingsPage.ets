@@ -1,8 +1,8 @@
 /**
  * ActionButtonSettingsPage — reorder / enable ActionButtons per format.
  *
- * Mirrors Android ActionButtonSettingsActivity. Each row has a drag handle
- * (ao_row_drag_<key>) and a switch (ao_row_switch_<key>). Reset key per labels.
+ * Each row has a drag handle (ao_row_drag_<key>) and a switch
+ * (ao_row_switch_<key>), with a stable reset action key.
  */
 import { ROUTE } from '../model/AppModel';
 import router from '@ohos.router';

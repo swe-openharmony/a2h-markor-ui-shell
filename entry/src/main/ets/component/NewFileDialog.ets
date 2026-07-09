@@ -1,9 +1,8 @@
 /**
  * NewFileDialog — Markdown/Plain/Todo/etc. new-file dialog.
  *
- * Mirrors Android NewFileDialog fragment. Component keys + ids mirror
- * labels.py NFD_* (new_file_dialog__name, __ext, __type, __template,
- * __name_format, __ok, __cancel, __folder).
+ * Exposes stable dialog ids for name, extension, type, template,
+ * name format, OK, cancel, and folder actions.
  */
 import { SK } from '../model/AppModel';
 

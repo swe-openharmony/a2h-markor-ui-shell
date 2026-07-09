@@ -1,8 +1,8 @@
 /**
  * SettingsPage — Settings root (preference categories).
  *
- * Mirrors Android SettingsActivity root. Component keys mirror labels.py
- * SETTINGS_* and SA_*_KEY. Sub-categories navigate to SettingsSubPage.
+ * Settings root with stable category keys. Sub-categories navigate to
+ * SettingsSubPage.
  */
 import router from '@ohos.router';
 import { SK, ROUTE } from '../model/AppModel';

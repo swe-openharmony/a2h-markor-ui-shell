@@ -1,9 +1,8 @@
 /**
  * ShareIntoPage — Share-into editor.
  *
- * Mirrors Android OpenShareIntoActivity / share-into fragment. Editor on top,
- * action list below (QuickNote / To-Do / Select / Search / Recent). The
- * format-link checkbox mirrors labels.SHI_LINK_CB_KEY.
+ * Share editor on top, action list below (QuickNote / To-Do / Select /
+ * Search / Recent), plus a stable format-link checkbox key.
  */
 import router from '@ohos.router';
 import { SK, ROUTE } from '../model/AppModel';

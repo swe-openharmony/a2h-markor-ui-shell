@@ -2,8 +2,7 @@
  * SettingsSubPage — generic settings sub-screen.
  *
  * Hosts General / Editor / View / Format categories based on router param
- * `name`. Mirrors Android SettingsActivity sub-fragments. Component keys
- * include SA_*_KEY and the format/category preferences.
+ * `name`. Component keys cover the settings and format preferences.
  */
 import router from '@ohos.router';
 import { ROUTE } from '../model/AppModel';

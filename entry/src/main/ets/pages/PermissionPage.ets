@@ -1,7 +1,7 @@
 /**
  * PermissionPage — StoragePermissionActivity gate.
  *
- * Mirrors Android StoragePermissionActivity. spa_yes / spa_exit keys per labels.
+ * Storage permission gate with stable spa_yes and spa_exit action keys.
  */
 import router from '@ohos.router';
 import { SK, ROUTE } from '../model/AppModel';

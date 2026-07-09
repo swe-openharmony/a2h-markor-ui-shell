@@ -1,9 +1,8 @@
 /**
  * EditorPage — Document editor (Markdown / Plain / Todo / etc.).
  *
- * Mirrors Android DocumentActivity: appbar with undo/redo/save/preview/search +
- * bottom text-actions toolbar (format buttons). Component keys + ids mirror
- * labels.py EDITOR_* and ED_*_*.
+ * Document editor with undo/redo/save/preview/search appbar and a bottom
+ * text-actions toolbar. Component keys and ids stay stable for tests.
  *
  * Format radio group + File Settings submenu live in EditorPage per the
  * `editor_format_submenu` and `editor_*` ui_info page ids.
@@ -23,7 +22,7 @@ struct EditorPage {
   @State private showSearch: boolean = false;
   @State private previewMode: boolean = false;
 
-  // File-settings check items (mirror labels ED_*_KEY)
+  // File-settings check items.
   @State private wordWrap: boolean = true;
   @State private lineNumbers: boolean = false;
   @State private highlighting: boolean = true;
