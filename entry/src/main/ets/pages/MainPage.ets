@@ -266,6 +266,16 @@ struct MainPage {
         }
         ListItem() {
           Row() {
+            Image($r('app.media.ic_attach_file_black_24dp')).width(24).height(24).fillColor('#757575').margin({ right: 16 })
+            Text('Share into').fontSize(15).layoutWeight(1)
+          }.width('100%').padding({ left: 16, right: 16, top: 18, bottom: 18 }).alignItems(VerticalAlign.Center)
+            .key('pref_key__more_info__share_into').onClick(() => {
+              AppStorage.setOrCreate<string>(SK.CUR_ROUTE, ROUTE.SHARE_INTO);
+              router.pushUrl({ url: ROUTE.SHARE_INTO });
+            })
+        }
+        ListItem() {
+          Row() {
             Image($r('app.media.ic_info_black_24dp')).width(24).height(24).fillColor('#757575').margin({ right: 16 })
             Text('Help / FAQ').fontSize(15).layoutWeight(1)
           }.width('100%').padding({ left: 16, right: 16, top: 18, bottom: 18 }).alignItems(VerticalAlign.Center)
