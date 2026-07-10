@@ -47,13 +47,13 @@ struct MainPage {
             .onClick(() => { this.selectedNames = [] })
         } else {
           Text($r('app.string.app_name')).fontSize(20).fontWeight(FontWeight.Medium).layoutWeight(1).margin({ left: 16 }).fontColor('#FFFFFF')
+          Image($r('app.media.ic_baseline_rule_folder_24')).width(28).height(28).fillColor('#FFFFFF').key('action_go_to')
+            .onClick(() => {})
+          Image($r('app.media.ic_sort_black_24dp')).width(28).height(28).fillColor('#FFFFFF').key('action_sort').margin({ left: 8 })
+            .onClick(() => {})
+          Image($r('app.media.ic_search_black_24dp')).width(28).height(28).fillColor('#FFFFFF').key('action_search').margin({ left: 8 }).onClick(() => {})
+          Image($r('app.media.ic_more_vert_black_24dp')).width(28).height(28).fillColor('#FFFFFF').margin({ left: 8, right: 12 }).onClick(() => {})
         }
-        Image($r('app.media.ic_baseline_rule_folder_24')).width(28).height(28).fillColor('#FFFFFF').key('action_go_to')
-          .onClick(() => {})
-        Image($r('app.media.ic_sort_black_24dp')).width(28).height(28).fillColor('#FFFFFF').key('action_sort').margin({ left: 8 })
-          .onClick(() => {})
-        Image($r('app.media.ic_search_black_24dp')).width(28).height(28).fillColor('#FFFFFF').key('action_search').margin({ left: 8 }).onClick(() => {})
-        Image($r('app.media.ic_more_vert_black_24dp')).width(28).height(28).fillColor('#FFFFFF').margin({ left: 8, right: 12 }).onClick(() => {})
       }.width('100%').height(56).backgroundColor('#1E2135').alignItems(VerticalAlign.Center)
        .key('notebook_toolbar_title')
 
