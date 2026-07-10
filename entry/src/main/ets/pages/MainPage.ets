@@ -16,6 +16,7 @@ struct MainPage {
   @StorageLink(SK.TODO_TASKS) private tasks: TodoTask[] = [];
   @StorageLink(SK.NEW_FILE_DIALOG_VISIBLE) private nfdVisible: boolean = false;
   @State private searchQuery: string = '';
+  @State private selectedNames: string[] = [];
 
   @Builder navItem(label: string, icon: Resource, key: string, idx: number) {
     Column() {
@@ -36,7 +37,17 @@ struct MainPage {
     Column() {
       // Appbar
       Row() {
-        Text($r('app.string.app_name')).fontSize(20).fontWeight(FontWeight.Medium).layoutWeight(1).margin({ left: 16 }).fontColor('#FFFFFF')
+        if (this.selectedNames.length > 0) {
+          Text(`${this.selectedNames.length}/${this.entries.length}`)
+            .fontSize(20).fontWeight(FontWeight.Medium).layoutWeight(1)
+            .margin({ left: 16 }).fontColor('#FFFFFF')
+          Button('Select all').backgroundColor(Color.Transparent).fontColor('#FFFFFF')
+            .onClick(() => { this.selectedNames = this.entries.map((item: FsEntry) => item.name) })
+          Button('Clear selection').backgroundColor(Color.Transparent).fontColor('#FFFFFF')
+            .onClick(() => { this.selectedNames = [] })
+        } else {
+          Text($r('app.string.app_name')).fontSize(20).fontWeight(FontWeight.Medium).layoutWeight(1).margin({ left: 16 }).fontColor('#FFFFFF')
+        }
         Image($r('app.media.ic_baseline_rule_folder_24')).width(28).height(28).fillColor('#FFFFFF').key('action_go_to')
           .onClick(() => {})
         Image($r('app.media.ic_sort_black_24dp')).width(28).height(28).fillColor('#FFFFFF').key('action_sort').margin({ left: 8 })
@@ -67,12 +78,23 @@ struct MainPage {
               .key('opoc_filesystem_item__root')
               .id('opoc_filesystem_item__title')
               .onClick(() => {
-                if (!e.isFolder) {
+                if (this.selectedNames.length > 0) {
+                  if (this.selectedNames.includes(e.name)) {
+                    this.selectedNames = this.selectedNames.filter((name: string) => name !== e.name)
+                  } else {
+                    this.selectedNames = [...this.selectedNames, e.name]
+                  }
+                } else if (!e.isFolder) {
                   AppStorage.setOrCreate<string>(SK.EDITOR_TITLE, e.name.replace(/\.[^.]+$/, ''));
                   AppStorage.setOrCreate<string>(SK.CUR_ROUTE, ROUTE.EDITOR);
                   router.pushUrl({ url: ROUTE.EDITOR });
                 }
               })
+              .gesture(LongPressGesture().onAction(() => {
+                if (!this.selectedNames.includes(e.name)) {
+                  this.selectedNames = [...this.selectedNames, e.name]
+                }
+              }))
             }
           }, (e: FsEntry) => e.name + e.path)
         }.layoutWeight(1).divider({ strokeWidth: 1, color: '#F0F0F0', startMargin: 56, endMargin: 0 })
