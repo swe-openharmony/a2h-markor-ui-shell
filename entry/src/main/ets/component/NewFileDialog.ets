@@ -95,10 +95,12 @@ export struct NewFileDialog {
 
       // Buttons
       Row() {
+        // The public shell exposes the dialog affordances only. Every terminal
+        // choice dismisses it; none creates or changes a file/folder.
         Button('FOLDER').backgroundColor('#FFFFFF').fontColor('#1976D2')
           .id('new_file_dialog__folder').key('new_file_dialog__folder').onClick(() => this.onCancel())
         Button('CANCEL').backgroundColor('#FFFFFF').fontColor('#1976D2')
-          .id('new_file_dialog__cancel').key('new_file_dialog__cancel').onClick(() => {})
+          .id('new_file_dialog__cancel').key('new_file_dialog__cancel').onClick(() => this.onCancel())
         Button('OK').backgroundColor('#FFFFFF').fontColor('#1976D2')
           .key('new_file_dialog__ok').onClick(() => this.onOk())
       }.width('100%').justifyContent(FlexAlign.End).padding(12)

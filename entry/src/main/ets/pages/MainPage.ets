@@ -16,7 +16,15 @@ struct MainPage {
   @State private searchVisible: boolean = false;
   @State private searchQuery: string = '';
   @State private activeOverlay: string = '';
+  // UI-shell-only selection for neutral To-Do menus. It is never written to
+  // document text, the fixture model, files, or preferences.
+  @State private todoActionChoice: string = '';
   @State private dialogInput: string = '';
+
+  private openTodoOverlay(name: string): void {
+    this.todoActionChoice = '';
+    this.activeOverlay = name;
+  }
 
   private get folderEntries(): FsEntry[] {
     return this.entries.filter((entry: FsEntry) => {
@@ -268,11 +276,20 @@ struct MainPage {
           }
         })
       if (todo) {
-        Row({ space: 16 }) {
-          Text('Add context').key('abid_todotxt_add_context')
-          Text('Add project').key('abid_todotxt_add_project')
-          Text('Archive completed tasks').key('abid_todotxt_archive_done_tasks')
-        }.height(52).padding(12)
+        // These toolbar affordances intentionally present neutral UI only. The
+        // shell must not alter the seeded todo text or persist an action.
+        Scroll() {
+          Row({ space: 12 }) {
+            Button('Sort').key('action_sort').onClick(() => this.openTodoOverlay('todo_sort'))
+            Button('Complete').key('action_toggle_done').onClick(() => this.openTodoOverlay('todo_complete'))
+            Button('Priority').key('action_priority').onClick(() => this.openTodoOverlay('todo_priority'))
+            Button('Due date').key('action_time').onClick(() => this.openTodoOverlay('todo_due_date'))
+            Button('Add context').key('abid_todotxt_add_context').onClick(() => this.openTodoOverlay('todo_context'))
+            Button('Add project').key('abid_todotxt_add_project').onClick(() => this.openTodoOverlay('todo_project'))
+            Button('Archive completed tasks').key('abid_todotxt_archive_done_tasks')
+              .onClick(() => this.openTodoOverlay('todo_archive'))
+          }.height(52).padding(12).alignItems(VerticalAlign.Center)
+        }.scrollable(ScrollDirection.Horizontal).scrollBar(BarState.Off).width('100%').height(52)
       }
     }.width('100%').layoutWeight(1)
   }
@@ -355,10 +372,56 @@ struct MainPage {
               this.activeOverlay = '';
             })
         }, (name: string) => name)
+      } else if (this.activeOverlay === 'todo_complete') {
+        Text('Completion').fontSize(18).padding(16)
+        Text('Mark task complete or active').fontSize(14).padding({ left: 16, right: 16 })
+        Button('Toggle completion').key('todotxt_toggle_completion')
+          .onClick(() => { this.todoActionChoice = 'completion'; })
+      } else if (this.activeOverlay === 'todo_priority') {
+        Text('Priority').fontSize(18).padding(16)
+        Row({ space: 8 }) {
+          ForEach(['A', 'B', 'C'], (priority: string) => {
+            Button(priority).key('todotxt_priority__' + priority)
+              .onClick(() => { this.todoActionChoice = priority; })
+          }, (priority: string) => priority)
+        }.padding({ left: 16, right: 16 })
+        Button('Clear priority').key('todotxt_clear_priority')
+          .onClick(() => { this.todoActionChoice = 'clear'; }).margin(16)
+      } else if (this.activeOverlay === 'todo_due_date') {
+        Text('Due date').fontSize(18).padding(16)
+        TextInput({ placeholder: 'YYYY-MM-DD' }).id('todo_shell_due_date_input')
+          .onChange((value: string) => { this.todoActionChoice = value; })
+          .margin({ left: 16, right: 16 })
+        Button('Clear due date').key('todotxt_clear_due')
+          .onClick(() => { this.todoActionChoice = 'clear'; }).margin(16)
+      } else if (this.activeOverlay === 'todo_sort') {
+        Text('Sort tasks').fontSize(18).padding(16)
+        ForEach(['Priority', 'Due date', 'Alphabetical'], (criterion: string) => {
+          Button(criterion).key('todotxt_sort__' + criterion.toLowerCase().replace(' ', '_'))
+            .onClick(() => { this.todoActionChoice = criterion; })
+        }, (criterion: string) => criterion)
+      } else if (this.activeOverlay === 'todo_context') {
+        Text('Add context').fontSize(18).padding(16)
+        ForEach(['home', 'shop'], (context: string) => {
+          Button(context).key('todotxt_context__' + context)
+            .onClick(() => { this.todoActionChoice = context; })
+        }, (context: string) => context)
+      } else if (this.activeOverlay === 'todo_project') {
+        Text('Add project').fontSize(18).padding(16)
+        ForEach(['shopping', 'family', 'reading', 'work', 'travel', 'music', 'video'], (project: string) => {
+          Button(project).key('todotxt_project__' + project)
+            .onClick(() => { this.todoActionChoice = project; })
+        }, (project: string) => project)
+      } else if (this.activeOverlay === 'todo_archive') {
+        Text('Archive completed tasks').fontSize(18).padding(16)
+        Text('Completed tasks remain unchanged in this presentation-only shell.')
+          .fontSize(14).padding({ left: 16, right: 16 })
       }
       if (this.activeOverlay !== 'goto') {
         Row({ space: 8 }) {
           Button('CANCEL').key('dialog_cancel').onClick(() => {
+            // Delete keeps the pre-existing shell behavior; all To-Do menus
+            // always close without modifying their presentation seed.
             if (this.activeOverlay !== 'delete') {
               this.activeOverlay = '';
             }
@@ -369,6 +432,9 @@ struct MainPage {
             Button('RENAME').key('dialog_confirm_rename').onClick(() => { this.activeOverlay = ''; })
           } else if (this.activeOverlay === 'move') {
             Button('MOVE').key('dialog_confirm_move').onClick(() => { this.activeOverlay = ''; })
+          } else if (this.activeOverlay.startsWith('todo_')) {
+            // Confirmation is visual-only: do not mutate the editor seed.
+            Button('OK').key('todotxt_action_ok').onClick(() => { this.activeOverlay = ''; })
           }
         }.padding(12).width('100%').justifyContent(FlexAlign.End)
       }
