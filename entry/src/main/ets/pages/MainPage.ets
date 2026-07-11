@@ -15,7 +15,7 @@ struct MainPage {
   @State private selectedNames: string[] = [];
   @State private searchVisible: boolean = false;
   @State private searchQuery: string = '';
-  @State private overlay: string = '';
+  @State private activeOverlay: string = '';
   @State private dialogInput: string = '';
 
   private get folderEntries(): FsEntry[] {
@@ -87,16 +87,16 @@ struct MainPage {
         Button('Clear selection').key('action_clear_selection')
           .onClick(() => this.resetSelection())
         Button('Delete').key('action_delete')
-          .onClick(() => { this.overlay = 'delete'; })
+          .onClick(() => { this.activeOverlay = 'delete'; })
         if (this.selectedNames.length === 1) {
           Button('Rename').key('action_rename')
             .onClick(() => {
               this.dialogInput = this.selectedNames[0];
-              this.overlay = 'rename';
+              this.activeOverlay = 'rename';
             })
         }
         Button('Move').key('action_move')
-          .onClick(() => { this.overlay = 'move'; })
+          .onClick(() => { this.activeOverlay = 'move'; })
         Button('Add to favourites').key('action_favourite')
           .onClick(() => {})
         Button('Create desktop shortcut').key('action_desktop_shortcut')
@@ -135,10 +135,10 @@ struct MainPage {
             .margin({ left: 16 })
             .fontColor('#FFFFFF')
           Image($r('app.media.ic_baseline_rule_folder_24')).width(28).height(28)
-            .fillColor('#FFFFFF').key('action_go_to').onClick(() => { this.overlay = 'goto'; })
+            .fillColor('#FFFFFF').key('action_go_to').onClick(() => { this.activeOverlay = 'goto'; })
           Image($r('app.media.ic_sort_black_24dp')).width(28).height(28)
             .fillColor('#FFFFFF').key('action_sort').margin({ left: 8 })
-            .onClick(() => { this.overlay = 'sort'; })
+            .onClick(() => { this.activeOverlay = 'sort'; })
           Image($r('app.media.ic_search_black_24dp')).width(28).height(28)
             .fillColor('#FFFFFF').key('action_search').margin({ left: 8, right: 12 })
             .onClick(() => { this.searchVisible = !this.searchVisible; })
@@ -243,7 +243,7 @@ struct MainPage {
         .key('fab_add_new_item')
         .accessibilityText('Create a new file or folder')
         .onClick(() => { this.nfdVisible = true; })
-        .gesture(LongPressGesture().onAction(() => { this.overlay = 'goto'; }))
+        .gesture(LongPressGesture().onAction(() => { this.activeOverlay = 'goto'; }))
       }.width('100%')
     }.width('100%').layoutWeight(1)
   }
@@ -332,43 +332,43 @@ struct MainPage {
   @Builder
   actionDialog() {
     Column() {
-      if (this.overlay === 'delete') {
+      if (this.activeOverlay === 'delete') {
         Text('Delete selected files?').fontSize(18).padding(16)
-      } else if (this.overlay === 'rename') {
+      } else if (this.activeOverlay === 'rename') {
         Text('Rename file').fontSize(18).padding(16)
         TextInput({ text: this.dialogInput })
           .id('rename_dialog__name')
           .onChange((value: string) => { this.dialogInput = value; })
           .margin({ left: 16, right: 16 })
-      } else if (this.overlay === 'move') {
+      } else if (this.activeOverlay === 'move') {
         Text('Move to folder').fontSize(18).padding(16)
         Button('sub').key('move_destination__sub')
-      } else if (this.overlay === 'sort') {
+      } else if (this.activeOverlay === 'sort') {
         Text('Sort notebook').fontSize(18).padding(16)
         Button('Name A-Z').key('sort_name_ascending')
         Button('Modified newest').key('sort_modified_descending')
-      } else if (this.overlay === 'goto') {
+      } else if (this.activeOverlay === 'goto') {
         Text('Go to').fontSize(18).padding(16)
         ForEach(['Notebook', 'Favourites', 'Recent', 'Popular'], (name: string) => {
           Button(name).key('virtual_folder__' + name.toLowerCase())
             .onClick(() => {
-              this.overlay = '';
+              this.activeOverlay = '';
             })
         }, (name: string) => name)
       }
-      if (this.overlay !== 'goto') {
+      if (this.activeOverlay !== 'goto') {
         Row({ space: 8 }) {
           Button('CANCEL').key('dialog_cancel').onClick(() => {
-            if (this.overlay !== 'delete') {
-              this.overlay = '';
+            if (this.activeOverlay !== 'delete') {
+              this.activeOverlay = '';
             }
           })
-          if (this.overlay === 'delete') {
-            Button('DELETE').key('dialog_confirm_delete').onClick(() => { this.overlay = ''; })
-          } else if (this.overlay === 'rename') {
-            Button('RENAME').key('dialog_confirm_rename').onClick(() => { this.overlay = ''; })
-          } else if (this.overlay === 'move') {
-            Button('MOVE').key('dialog_confirm_move').onClick(() => { this.overlay = ''; })
+          if (this.activeOverlay === 'delete') {
+            Button('DELETE').key('dialog_confirm_delete').onClick(() => { this.activeOverlay = ''; })
+          } else if (this.activeOverlay === 'rename') {
+            Button('RENAME').key('dialog_confirm_rename').onClick(() => { this.activeOverlay = ''; })
+          } else if (this.activeOverlay === 'move') {
+            Button('MOVE').key('dialog_confirm_move').onClick(() => { this.activeOverlay = ''; })
           }
         }.padding(12).width('100%').justifyContent(FlexAlign.End)
       }
@@ -408,7 +408,7 @@ struct MainPage {
           onOk: () => { this.nfdVisible = false; },
         })
       }
-      if (this.overlay.length > 0) {
+      if (this.activeOverlay.length > 0) {
         Column() {}.width('100%').height('100%').backgroundColor('rgba(0,0,0,0.4)')
         this.actionDialog()
       }
