@@ -1,0 +1,30 @@
+{
+  "plural": [
+    {
+      "name": "item_selected",
+      "value": [
+        {
+          "quantity": "one",
+          "value": "@string/one_item_selected"
+        },
+        {
+          "quantity": "other",
+          "value": "@string/items_selected_witharg"
+        }
+      ]
+    },
+    {
+      "name": "documents",
+      "value": [
+        {
+          "quantity": "one",
+          "value": "@string/document"
+        },
+        {
+          "quantity": "other",
+          "value": "@string/documents"
+        }
+      ]
+    }
+  ]
+}

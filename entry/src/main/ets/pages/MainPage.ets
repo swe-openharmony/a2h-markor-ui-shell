@@ -1,0 +1,417 @@
+import router from '@ohos.router';
+import { FsEntry, ROUTE, SEED_TODO_TEXT, SK, TAB } from '../model/AppModel';
+import { NewFileDialog } from '../component/NewFileDialog';
+
+@Entry
+@Component
+struct MainPage {
+  @StorageLink(SK.CUR_TAB) private curTab: number = TAB.NOTEBOOK;
+  @StorageLink(SK.NOTEBOOK_ENTRIES) private entries: FsEntry[] = [];
+  @StorageLink(SK.FILE_CONTENTS) private fileContents: Record<string, string> = {};
+  @StorageLink(SK.QUICKNOTE_TEXT) private quickNote: string = '';
+  @StorageLink(SK.CUR_FOLDER) private currentFolder: string = '';
+  @StorageLink(SK.VIRTUAL_FOLDER) private virtualFolder: string = 'Notebook';
+  @StorageLink(SK.NEW_FILE_DIALOG_VISIBLE) private nfdVisible: boolean = false;
+  @State private selectedNames: string[] = [];
+  @State private searchVisible: boolean = false;
+  @State private searchQuery: string = '';
+  @State private overlay: string = '';
+  @State private dialogInput: string = '';
+
+  private get folderEntries(): FsEntry[] {
+    return this.entries.filter((entry: FsEntry) => {
+      if (this.currentFolder.length === 0) {
+        return entry.path.indexOf('/') < 0;
+      }
+      const prefix: string = this.currentFolder + '/';
+      if (!entry.path.startsWith(prefix)) {
+        return false;
+      }
+      return entry.path.slice(prefix.length).indexOf('/') < 0;
+    });
+  }
+
+  private get visibleEntries(): FsEntry[] {
+    if (this.virtualFolder !== 'Notebook') {
+      return [];
+    }
+    const query: string = this.searchQuery.trim().toLowerCase();
+    if (query.length === 0) {
+      return this.folderEntries;
+    }
+    return this.folderEntries.filter((entry: FsEntry) => entry.name.toLowerCase().includes(query));
+  }
+
+  private openFile(entry: FsEntry): void {
+    AppStorage.set<string>(SK.EDITOR_PATH, entry.path);
+    AppStorage.set<string>(SK.EDITOR_TITLE, entry.name);
+    AppStorage.set<string>(SK.EDITOR_TEXT, this.fileContents[entry.path] ?? '');
+    AppStorage.set<string>(
+      SK.EDITOR_FORMAT,
+      entry.name.endsWith('.todo.txt') ? 'To-Do' : 'Markdown',
+    );
+    AppStorage.set<string>(SK.CUR_ROUTE, ROUTE.EDITOR);
+    router.pushUrl({ url: ROUTE.EDITOR });
+  }
+
+  private resetSelection(): void {
+    this.selectedNames = [];
+  }
+
+  @Builder
+  navItem(label: string, icon: Resource, key: string, index: number) {
+    Column() {
+      Image(icon).width(24).height(24)
+        .fillColor(this.curTab === index ? '#F04B4B' : '#FFFFFF')
+      Text(label).fontSize(12).margin({ top: 4 })
+        .fontColor(this.curTab === index ? '#F04B4B' : '#FFFFFF')
+    }
+    .key(key)
+    .accessibilityText(label)
+    .accessibilityDescription(this.curTab === index ? 'selected' : 'not selected')
+    .layoutWeight(1)
+    .height(56)
+    .justifyContent(FlexAlign.Center)
+    .onClick(() => {
+      this.curTab = index;
+      this.resetSelection();
+    })
+  }
+
+  @Builder
+  selectionActions() {
+    Scroll() {
+      Row({ space: 4 }) {
+        Button('Select all').key('action_select_all')
+          .onClick(() => {})
+        Button('Clear selection').key('action_clear_selection')
+          .onClick(() => this.resetSelection())
+        Button('Delete').key('action_delete')
+          .onClick(() => { this.overlay = 'delete'; })
+        if (this.selectedNames.length === 1) {
+          Button('Rename').key('action_rename')
+            .onClick(() => {
+              this.dialogInput = this.selectedNames[0];
+              this.overlay = 'rename';
+            })
+        }
+        Button('Move').key('action_move')
+          .onClick(() => { this.overlay = 'move'; })
+        Button('Add to favourites').key('action_favourite')
+          .onClick(() => {})
+        Button('Create desktop shortcut').key('action_desktop_shortcut')
+          .onClick(() => {})
+      }.height(48).alignItems(VerticalAlign.Center)
+    }
+    .scrollable(ScrollDirection.Horizontal)
+    .scrollBar(BarState.Off)
+    .width('100%')
+  }
+
+  @Builder
+  notebookToolbar() {
+    Column() {
+      Row() {
+        if (this.selectedNames.length > 0) {
+          Text(`${this.selectedNames.length}/${this.visibleEntries.length}`)
+            .fontSize(20)
+            .fontWeight(FontWeight.Medium)
+            .layoutWeight(1)
+            .margin({ left: 16 })
+            .fontColor('#FFFFFF')
+            .key('notebook_selection_count')
+        } else {
+          if (this.currentFolder.length > 0) {
+            Button('Up').key('notebook_up').backgroundColor(Color.Transparent).fontColor('#FFFFFF')
+              .onClick(() => {
+                const slash: number = this.currentFolder.lastIndexOf('/');
+                this.currentFolder = slash < 0 ? '' : this.currentFolder.slice(0, slash);
+              })
+          }
+          Text(this.currentFolder.length > 0 ? this.currentFolder : this.virtualFolder)
+            .fontSize(20)
+            .fontWeight(FontWeight.Medium)
+            .layoutWeight(1)
+            .margin({ left: 16 })
+            .fontColor('#FFFFFF')
+          Image($r('app.media.ic_baseline_rule_folder_24')).width(28).height(28)
+            .fillColor('#FFFFFF').key('action_go_to').onClick(() => { this.overlay = 'goto'; })
+          Image($r('app.media.ic_sort_black_24dp')).width(28).height(28)
+            .fillColor('#FFFFFF').key('action_sort').margin({ left: 8 })
+            .onClick(() => { this.overlay = 'sort'; })
+          Image($r('app.media.ic_search_black_24dp')).width(28).height(28)
+            .fillColor('#FFFFFF').key('action_search').margin({ left: 8, right: 12 })
+            .onClick(() => { this.searchVisible = !this.searchVisible; })
+        }
+      }
+      .width('100%')
+      .height(56)
+      .backgroundColor('#1E2135')
+      .alignItems(VerticalAlign.Center)
+      .key('notebook_toolbar_title')
+
+      if (this.selectedNames.length > 0) {
+        this.selectionActions()
+      } else if (this.searchVisible) {
+        Search({ value: this.searchQuery, placeholder: 'Search notebook' })
+          .id('notebook_search_input')
+          .key('notebook_filter_search')
+          .onChange((_value: string) => {})
+          .width('100%')
+          .height(48)
+      }
+    }.width('100%').backgroundColor('#1E2135')
+  }
+
+  @Builder
+  notebookList() {
+    if (this.visibleEntries.length === 0) {
+      Column() {
+        Text('No files in this view').fontSize(16).fontColor('#757575')
+      }
+      .layoutWeight(1)
+      .width('100%')
+      .justifyContent(FlexAlign.Center)
+      .alignItems(HorizontalAlign.Center)
+    } else {
+      List() {
+        ForEach(this.visibleEntries, (entry: FsEntry) => {
+          ListItem() {
+            Row() {
+              Image(entry.isFolder ? $r('app.media.ic_folder_gray_24dp') : $r('app.media.ic_file_gray_24dp'))
+                .width(28).height(28).fillColor('#757575')
+              Column() {
+                Text(entry.name)
+                  .fontSize(16)
+                  .fontColor('#212121')
+                  .id('opoc_filesystem_item__title')
+                  .accessibilityText(entry.name)
+                Text(entry.description).fontSize(12).fontColor('#757575').margin({ top: 2 })
+              }.layoutWeight(1).margin({ left: 12 }).alignItems(HorizontalAlign.Start)
+              if (this.selectedNames.includes(entry.name)) {
+                Text('Selected').fontSize(12).fontColor('#1976D2')
+              }
+            }
+            .width('100%')
+            .height(72)
+            .padding({ left: 16, right: 16 })
+            .alignItems(VerticalAlign.Center)
+            .key('notebook_row__' + entry.path)
+            .accessibilityText(entry.name)
+            .onClick(() => {
+              if (this.selectedNames.length > 0) {
+                if (this.selectedNames.includes(entry.name)) {
+                  this.selectedNames =
+                    this.selectedNames.filter((name: string) => name !== entry.name);
+                } else {
+                  this.selectedNames = [...this.selectedNames, entry.name];
+                }
+              } else if (entry.isFolder) {
+                this.currentFolder = entry.path;
+              } else {
+                this.openFile(entry);
+              }
+            })
+            .gesture(LongPressGesture().onAction(() => {
+              if (!this.selectedNames.includes(entry.name)) {
+                this.selectedNames = [...this.selectedNames, entry.name];
+              }
+            }))
+          }
+        }, (entry: FsEntry) => entry.path)
+      }
+      .layoutWeight(1)
+      .id('ui__filesystem_dialog__list')
+      .divider({ strokeWidth: 1, color: '#F0F0F0', startMargin: 56 })
+    }
+  }
+
+  @Builder
+  buildNotebookTab() {
+    Column() {
+      this.notebookToolbar()
+      this.notebookList()
+      Flex({ justifyContent: FlexAlign.End, alignItems: ItemAlign.End }) {
+        Column() {
+          Image($r('app.media.ic_add_white_24dp')).width(28).height(28).fillColor('#FFFFFF')
+        }
+        .width(56)
+        .height(56)
+        .borderRadius(28)
+        .backgroundColor('#F04B4B')
+        .margin({ right: 16, bottom: 16 })
+        .key('fab_add_new_item')
+        .accessibilityText('Create a new file or folder')
+        .onClick(() => { this.nfdVisible = true; })
+        .gesture(LongPressGesture().onAction(() => { this.overlay = 'goto'; }))
+      }.width('100%')
+    }.width('100%').layoutWeight(1)
+  }
+
+  @Builder
+  editorTab(text: string, todo: boolean) {
+    Column() {
+      Row() {
+        Text(todo ? 'To-Do' : 'QuickNote').fontSize(20).fontColor('#FFFFFF')
+          .layoutWeight(1).margin({ left: 16 })
+        Image($r('app.media.ic_save_black_24dp')).width(28).height(28)
+          .fillColor('#FFFFFF').key('action_save').margin({ right: 12 })
+      }.width('100%').height(56).backgroundColor('#1E2135').alignItems(VerticalAlign.Center)
+      TextArea({ text: text })
+        .id('document__fragment__edit__highlighting_editor')
+        .layoutWeight(1)
+        .width('100%')
+        .fontFamily('monospace')
+        .onChange((value: string) => {
+          if (!todo) {
+            this.quickNote = value;
+          }
+        })
+      if (todo) {
+        Row({ space: 16 }) {
+          Text('Add context').key('abid_todotxt_add_context')
+          Text('Add project').key('abid_todotxt_add_project')
+          Text('Archive completed tasks').key('abid_todotxt_archive_done_tasks')
+        }.height(52).padding(12)
+      }
+    }.width('100%').layoutWeight(1)
+  }
+
+  @Builder
+  moreRow(title: string, key: string, route: string) {
+    ListItem() {
+      Row() {
+        Text(title).fontSize(15).layoutWeight(1)
+      }
+      .width('100%')
+      .padding({ left: 16, right: 16, top: 18, bottom: 18 })
+      .key(key)
+      .onClick(() => {
+        AppStorage.set<string>(SK.CUR_ROUTE, route);
+        router.pushUrl({ url: route });
+      })
+    }
+  }
+
+  @Builder
+  buildMoreTab() {
+    Column() {
+      Row() {
+        Text('More').fontSize(20).fontColor('#FFFFFF').margin({ left: 16 })
+      }.width('100%').height(56).backgroundColor('#1E2135').alignItems(VerticalAlign.Center)
+      List() {
+        ListItem() {
+          Column() {
+            Text('Markor').fontSize(18)
+            Text('Version v2.16.1').fontSize(12).fontColor('#757575')
+          }.width('100%').padding(20).alignItems(HorizontalAlign.Start)
+        }
+        this.moreRow('Settings', 'pref_key__more_info__settings', ROUTE.SETTINGS)
+        this.moreRow('Share into', 'pref_key__more_info__share_into', ROUTE.SHARE_INTO)
+        this.moreRow('Introduction', 'pref_key__more_info__introduction', ROUTE.INTRO)
+        this.moreRow('Storage permission', 'pref_key__more_info__permission', ROUTE.PERMISSION)
+        ListItem() {
+          Row() {
+            Text('Copy build information').fontSize(15).layoutWeight(1)
+          }.width('100%').padding(18).key('pref_key__more_info__copy_build_information')
+        }
+        ListItem() {
+          Row() {
+            Text('Project license').fontSize(15).layoutWeight(1)
+          }.width('100%').padding(18).key('pref_key__more_info__project_license')
+        }
+        ListItem() {
+          Row() {
+            Text('Contributors').fontSize(15).layoutWeight(1)
+          }.width('100%').padding(18).key('pref_key__more_info__contributors_public_info')
+        }
+      }.layoutWeight(1).divider({ strokeWidth: 1, color: '#F0F0F0' })
+    }.width('100%').layoutWeight(1)
+  }
+
+  @Builder
+  actionDialog() {
+    Column() {
+      if (this.overlay === 'delete') {
+        Text('Delete selected files?').fontSize(18).padding(16)
+      } else if (this.overlay === 'rename') {
+        Text('Rename file').fontSize(18).padding(16)
+        TextInput({ text: this.dialogInput })
+          .id('rename_dialog__name')
+          .onChange((value: string) => { this.dialogInput = value; })
+          .margin({ left: 16, right: 16 })
+      } else if (this.overlay === 'move') {
+        Text('Move to folder').fontSize(18).padding(16)
+        Button('sub').key('move_destination__sub')
+      } else if (this.overlay === 'sort') {
+        Text('Sort notebook').fontSize(18).padding(16)
+        Button('Name A-Z').key('sort_name_ascending')
+        Button('Modified newest').key('sort_modified_descending')
+      } else if (this.overlay === 'goto') {
+        Text('Go to').fontSize(18).padding(16)
+        ForEach(['Notebook', 'Favourites', 'Recent', 'Popular'], (name: string) => {
+          Button(name).key('virtual_folder__' + name.toLowerCase())
+            .onClick(() => {
+              this.overlay = '';
+            })
+        }, (name: string) => name)
+      }
+      if (this.overlay !== 'goto') {
+        Row({ space: 8 }) {
+          Button('CANCEL').key('dialog_cancel').onClick(() => {
+            if (this.overlay !== 'delete') {
+              this.overlay = '';
+            }
+          })
+          if (this.overlay === 'delete') {
+            Button('DELETE').key('dialog_confirm_delete').onClick(() => { this.overlay = ''; })
+          } else if (this.overlay === 'rename') {
+            Button('RENAME').key('dialog_confirm_rename').onClick(() => { this.overlay = ''; })
+          } else if (this.overlay === 'move') {
+            Button('MOVE').key('dialog_confirm_move').onClick(() => { this.overlay = ''; })
+          }
+        }.padding(12).width('100%').justifyContent(FlexAlign.End)
+      }
+    }
+    .width('88%')
+    .padding(12)
+    .backgroundColor('#FFFFFF')
+    .border({ width: 1, color: '#E0E0E0' })
+    .key('notebook_action_dialog')
+  }
+
+  build() {
+    Stack() {
+      Column() {
+        if (this.curTab === TAB.NOTEBOOK) {
+          this.buildNotebookTab()
+        } else if (this.curTab === TAB.TODO) {
+          this.editorTab(SEED_TODO_TEXT, true)
+        } else if (this.curTab === TAB.QUICKNOTE) {
+          this.editorTab(this.quickNote, false)
+        } else {
+          this.buildMoreTab()
+        }
+        Row() {
+          this.navItem('Notebook', $r('app.media.ic_folder_white_24dp'), 'nav_notebook', TAB.NOTEBOOK)
+          this.navItem('To-Do', $r('app.media.ic_assignment_turned_in_black_24dp'), 'nav_todo', TAB.TODO)
+          this.navItem('QuickNote', $r('app.media.ic_lightning_black_24dp'), 'nav_quicknote', TAB.QUICKNOTE)
+          this.navItem('More', $r('app.media.ic_favorite_black_24dp'), 'nav_more', TAB.MORE)
+        }.width('100%').height(56).backgroundColor('#1E2135').id('bottom_navigation_bar')
+      }.width('100%').height('100%')
+
+      if (this.nfdVisible) {
+        Column() {}.width('100%').height('100%').backgroundColor('rgba(0,0,0,0.4)')
+        NewFileDialog({
+          visible: this.nfdVisible,
+          onCancel: () => { this.nfdVisible = false; },
+          onOk: () => { this.nfdVisible = false; },
+        })
+      }
+      if (this.overlay.length > 0) {
+        Column() {}.width('100%').height('100%').backgroundColor('rgba(0,0,0,0.4)')
+        this.actionDialog()
+      }
+    }.width('100%').height('100%').backgroundColor('#FAFAFA')
+  }
+}

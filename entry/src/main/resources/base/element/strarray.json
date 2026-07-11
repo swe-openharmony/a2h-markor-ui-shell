@@ -1,0 +1,477 @@
+{
+  "strarray": [
+    {
+      "name": "pref_arrdisp__app_themes",
+      "value": [
+        {
+          "value": "System"
+        },
+        {
+          "value": "Auto"
+        },
+        {
+          "value": "Auto (09:00 - 17:00)"
+        },
+        {
+          "value": "@string/light"
+        },
+        {
+          "value": "@string/dark"
+        },
+        {
+          "value": "@string/black"
+        }
+      ]
+    },
+    {
+      "name": "pref_arrkeys__app_themes",
+      "value": [
+        {
+          "value": "system"
+        },
+        {
+          "value": "auto"
+        },
+        {
+          "value": "autocompat"
+        },
+        {
+          "value": "light"
+        },
+        {
+          "value": "dark"
+        },
+        {
+          "value": "dark-black"
+        }
+      ]
+    },
+    {
+      "name": "pref_arrdisp__editor_basic_color_schemes",
+      "value": [
+        {
+          "value": "@string/editor_basic_color_scheme_markor"
+        },
+        {
+          "value": "@string/editor_basic_color_scheme_black_or_white"
+        },
+        {
+          "value": "@string/editor_basic_color_scheme_solarized"
+        }
+      ]
+    },
+    {
+      "name": "pref_arrdisp__bottomnav",
+      "value": [
+        {
+          "value": "@string/notebook"
+        },
+        {
+          "value": "@string/todo"
+        },
+        {
+          "value": "@string/quicknote"
+        }
+      ]
+    },
+    {
+      "name": "pref_arrdisp__search_depth",
+      "value": [
+        {
+          "value": "@string/infinite"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "name": "textactions_press_key__text",
+      "value": [
+        {
+          "value": "@string/key_page_up"
+        },
+        {
+          "value": "@string/key_page_down"
+        },
+        {
+          "value": "@string/key_pos_1"
+        },
+        {
+          "value": "@string/key_pos_end"
+        },
+        {
+          "value": "@string/jump_to_cursor"
+        },
+        {
+          "value": "@string/duplicate_hotkey"
+        },
+        {
+          "value": "@string/move_text_one_line_up"
+        },
+        {
+          "value": "@string/move_text_one_line_down"
+        },
+        {
+          "value": "@string/select_current_line"
+        },
+        {
+          "value": "@string/select_lines_hotkey"
+        },
+        {
+          "value": "@string/key_ctrl_a"
+        },
+        {
+          "value": "@string/key_pos_1_document"
+        },
+        {
+          "value": "@string/key_pos_end_document"
+        },
+        {
+          "value": "@string/go_to_line_hotkey"
+        },
+        {
+          "value": "@string/key_tab"
+        },
+        {
+          "value": "@string/em_space"
+        },
+        {
+          "value": "@string/zero_width_space"
+        },
+        {
+          "value": "@string/break_page_pdf_print"
+        },
+        {
+          "value": "@string/char_punctation_mark_arrows"
+        },
+        {
+          "value": "@string/continued_overline"
+        },
+        {
+          "value": "@string/ohm"
+        },
+        {
+          "value": "@string/shrug"
+        }
+      ]
+    },
+    {
+      "name": "asciidoc_textactions_press_key__text",
+      "value": [
+        {
+          "value": "@string/asciidoc_block_quote"
+        },
+        {
+          "value": "@string/asciidoc_block_comment"
+        },
+        {
+          "value": "@string/asciidoc_block_example"
+        },
+        {
+          "value": "@string/asciidoc_block_listing"
+        },
+        {
+          "value": "@string/asciidoc_block_literal"
+        },
+        {
+          "value": "@string/asciidoc_block_open"
+        },
+        {
+          "value": "@string/asciidoc_block_sidebar"
+        },
+        {
+          "value": "@string/asciidoc_block_table"
+        },
+        {
+          "value": "@string/asciidoc_block_pass"
+        },
+        {
+          "value": "@string/asciidoc_block_code"
+        },
+        {
+          "value": "@string/asciidoc_block_collapsible"
+        },
+        {
+          "value": "@string/asciidoc_highlight"
+        },
+        {
+          "value": "@string/asciidoc_underline"
+        },
+        {
+          "value": "@string/asciidoc_linethrough"
+        },
+        {
+          "value": "@string/asciidoc_overline"
+        },
+        {
+          "value": "@string/asciidoc_subscript"
+        },
+        {
+          "value": "@string/asciidoc_superscript"
+        },
+        {
+          "value": "@string/asciidoc_nobreak"
+        },
+        {
+          "value": "@string/asciidoc_nowrap"
+        },
+        {
+          "value": "@string/asciidoc_prewrap"
+        },
+        {
+          "value": "@string/asciidoc_break_thematic"
+        },
+        {
+          "value": "@string/asciidoc_break_page"
+        }
+      ]
+    },
+    {
+      "name": "pref_arrdisp__files_startup_folder",
+      "value": [
+        {
+          "value": "@string/notebook"
+        },
+        {
+          "value": "@string/favourites"
+        },
+        {
+          "value": "@string/internal_storage"
+        },
+        {
+          "value": "@string/appdata_public"
+        },
+        {
+          "value": "@string/appdata_private"
+        },
+        {
+          "value": "@string/popular_documents"
+        },
+        {
+          "value": "@string/recently_viewed_documents"
+        },
+        {
+          "value": "@string/storage"
+        }
+      ]
+    },
+    {
+      "name": "pref_arrkeys__files_startup_folder",
+      "value": [
+        {
+          "value": "notebook"
+        },
+        {
+          "value": "favourites"
+        },
+        {
+          "value": "internal_storage"
+        },
+        {
+          "value": "appdata_public"
+        },
+        {
+          "value": "appdata_private"
+        },
+        {
+          "value": "popular_documents"
+        },
+        {
+          "value": "recently_viewed_documents"
+        },
+        {
+          "value": "storage"
+        }
+      ]
+    },
+    {
+      "name": "pref_arrdisp__unordered_list_character",
+      "value": [
+        {
+          "value": "@string/unordered_list_char_dash"
+        },
+        {
+          "value": "@string/unordered_list_char_asterisk"
+        },
+        {
+          "value": "@string/unordered_list_char_plus"
+        }
+      ]
+    },
+    {
+      "name": "pref_arrkeys__unordered_list_character",
+      "value": [
+        {
+          "value": "-"
+        },
+        {
+          "value": "*"
+        },
+        {
+          "value": "+"
+        }
+      ]
+    },
+    {
+      "name": "pref_arrdisp__markdown_toc",
+      "value": [
+        {
+          "value": "@string/heading_1"
+        },
+        {
+          "value": "@string/heading_2"
+        },
+        {
+          "value": "@string/heading_3"
+        },
+        {
+          "value": "@string/heading_4"
+        },
+        {
+          "value": "@string/heading_5"
+        },
+        {
+          "value": "@string/heading_6"
+        }
+      ]
+    },
+    {
+      "name": "arr_one_to_six",
+      "value": [
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "4"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "name": "pref_arrkeys__zero_to_two",
+      "value": [
+        {
+          "value": "0"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "name": "pref_arrkeys__zero_to_three",
+      "value": [
+        {
+          "value": "0"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "name": "pref_arrkeys__search_depth",
+      "value": [
+        {
+          "value": "0"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "5"
+        },
+        {
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "name": "pref_arrkeys__zero_to_four",
+      "value": [
+        {
+          "value": "0"
+        },
+        {
+          "value": "1"
+        },
+        {
+          "value": "2"
+        },
+        {
+          "value": "3"
+        },
+        {
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "name": "pref_arrdisp__navigationbar_color",
+      "value": [
+        {
+          "value": "System"
+        },
+        {
+          "value": "@string/black"
+        },
+        {
+          "value": "@string/white"
+        }
+      ]
+    },
+    {
+      "name": "pref_arrkeys__navigationbar_color",
+      "value": [
+        {
+          "value": ""
+        },
+        {
+          "value": "#000000"
+        },
+        {
+          "value": "#ffffff"
+        }
+      ]
+    }
+  ]
+}
