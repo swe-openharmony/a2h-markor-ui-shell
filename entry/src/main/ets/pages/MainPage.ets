@@ -26,7 +26,7 @@ struct MainPage {
     this.activeOverlay = name;
   }
 
-  private get folderEntries(): FsEntry[] {
+  private folderEntryList(): FsEntry[] {
     return this.entries.filter((entry: FsEntry) => {
       if (this.currentFolder.length === 0) {
         return entry.path.indexOf('/') < 0;
@@ -39,15 +39,16 @@ struct MainPage {
     });
   }
 
-  private get visibleEntries(): FsEntry[] {
+  private visibleEntryList(): FsEntry[] {
     if (this.virtualFolder !== 'Notebook') {
       return [];
     }
     const query: string = this.searchQuery.trim().toLowerCase();
+    const folderEntries: FsEntry[] = this.folderEntryList();
     if (query.length === 0) {
-      return this.folderEntries;
+      return folderEntries;
     }
-    return this.folderEntries.filter((entry: FsEntry) => entry.name.toLowerCase().includes(query));
+    return folderEntries.filter((entry: FsEntry) => entry.name.toLowerCase().includes(query));
   }
 
   private openFile(entry: FsEntry): void {
@@ -121,7 +122,7 @@ struct MainPage {
     Column() {
       Row() {
         if (this.selectedNames.length > 0) {
-          Text(`${this.selectedNames.length}/${this.visibleEntries.length}`)
+          Text(`${this.selectedNames.length}/${this.visibleEntryList().length}`)
             .fontSize(20)
             .fontWeight(FontWeight.Medium)
             .layoutWeight(1)
@@ -173,7 +174,7 @@ struct MainPage {
 
   @Builder
   notebookList() {
-    if (this.visibleEntries.length === 0) {
+    if (this.visibleEntryList().length === 0) {
       Column() {
         Text('No files in this view').fontSize(16).fontColor('#757575')
       }
@@ -183,7 +184,7 @@ struct MainPage {
       .alignItems(HorizontalAlign.Center)
     } else {
       List() {
-        ForEach(this.visibleEntries, (entry: FsEntry) => {
+        ForEach(this.visibleEntryList(), (entry: FsEntry) => {
           ListItem() {
             Row() {
               Image(entry.isFolder ? $r('app.media.ic_folder_gray_24dp') : $r('app.media.ic_file_gray_24dp'))
