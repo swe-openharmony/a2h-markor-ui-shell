@@ -1,0 +1,28 @@
+{
+  "float": [
+    {
+      "name": "activity_horizontal_margin",
+      "value": "10vp"
+    },
+    {
+      "name": "activity_vertical_margin",
+      "value": "16vp"
+    },
+    {
+      "name": "editor_bottom_margin",
+      "value": "32vp"
+    },
+    {
+      "name": "appbar_padding_top",
+      "value": "8vp"
+    },
+    {
+      "name": "text_actions_bar_height",
+      "value": "46vp"
+    },
+    {
+      "name": "dialog_corner_radius",
+      "value": "16vp"
+    }
+  ]
+}

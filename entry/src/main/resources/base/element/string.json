@@ -1,0 +1,3388 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "Markor module"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "Markor entry"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "Markor"
+    },
+    {
+      "name": "pref_key__navigationbar_color",
+      "value": "pref_key__navigationbar_color"
+    },
+    {
+      "name": "app_name_real",
+      "value": "Markor"
+    },
+    {
+      "name": "app_name",
+      "value": "@string/app_name_real"
+    },
+    {
+      "name": "app_license_name",
+      "value": "Apache 2.0"
+    },
+    {
+      "name": "app_community_url",
+      "value": "https://github.com/gsantner/markor/discussions/2269#discussion_bucket"
+    },
+    {
+      "name": "app_bugreport_url",
+      "value": "https://github.com/gsantner/markor/discussions/2269#discussion_bucket"
+    },
+    {
+      "name": "app_translate_url",
+      "value": "https://github.com/gsantner/markor/discussions/2269#discussion_bucket"
+    },
+    {
+      "name": "app_web_url",
+      "value": "https://github.com/gsantner/markor"
+    },
+    {
+      "name": "sync_client_support_issue_url",
+      "value": "https://github.com/gsantner/markor/discussions/1381"
+    },
+    {
+      "name": "app_source_code_url",
+      "value": "https://github.com/gsantner/markor"
+    },
+    {
+      "name": "huuid",
+      "value": "hUUID"
+    },
+    {
+      "name": "embed_binary",
+      "value": "Embed binary"
+    },
+    {
+      "name": "actionbutton",
+      "value": "ActionButton"
+    },
+    {
+      "name": "checkmark_symbol",
+      "value": "\\u2301"
+    },
+    {
+      "name": "bookmark_symbol",
+      "value": "\\u2605"
+    },
+    {
+      "name": "lightning_symbol",
+      "value": "\\u2714"
+    },
+    {
+      "name": "plus",
+      "value": "+"
+    },
+    {
+      "name": "share_html__mime_html",
+      "value": "HTML"
+    },
+    {
+      "name": "pdf",
+      "value": "PDF"
+    },
+    {
+      "name": "markdown",
+      "value": "Markdown"
+    },
+    {
+      "name": "backup",
+      "value": "Backup"
+    },
+    {
+      "name": "front_matter",
+      "value": "Front Matter"
+    },
+    {
+      "name": "mime_type",
+      "value": "MIME type"
+    },
+    {
+      "name": "sha_256",
+      "value": "SHA-256"
+    },
+    {
+      "name": "default_font_family",
+      "value": "sans-serif-regular"
+    },
+    {
+      "name": "start",
+      "value": "Start"
+    },
+    {
+      "name": "quicknote",
+      "value": "QuickNote"
+    },
+    {
+      "name": "todo",
+      "value": "To-Do"
+    },
+    {
+      "name": "todo_txt",
+      "value": "todo.txt"
+    },
+    {
+      "name": "storage",
+      "value": "Storage"
+    },
+    {
+      "name": "quicknote_default_filename",
+      "value": "QuickNote.md"
+    },
+    {
+      "name": "todo_default_filename",
+      "value": "todo.txt"
+    },
+    {
+      "name": "web_browser",
+      "value": "Web browser"
+    },
+    {
+      "name": "app_drawer_launcher_special_files_description",
+      "value": "App drawer launchers - To-Do, QuickNote"
+    },
+    {
+      "name": "katex_latex",
+      "value": "KaTex (LaTex)\n$ a^2 + b^2 = c^2 $"
+    },
+    {
+      "name": "app_theme_system",
+      "value": "system"
+    },
+    {
+      "name": "editor_basic_color_scheme_markor",
+      "value": "Markor"
+    },
+    {
+      "name": "editor_basic_color_scheme_black_or_white",
+      "value": "Black or White"
+    },
+    {
+      "name": "editor_basic_color_scheme_amoled",
+      "value": "AMOLED"
+    },
+    {
+      "name": "editor_basic_color_scheme_solarized",
+      "value": "Solarized"
+    },
+    {
+      "name": "editor_basic_color_scheme_nord",
+      "value": "Nord"
+    },
+    {
+      "name": "editor_basic_color_scheme_gruvbox",
+      "value": "Gruvbox"
+    },
+    {
+      "name": "editor_basic_color_scheme_greenscale",
+      "value": "Greenscale"
+    },
+    {
+      "name": "editor_basic_color_scheme_sepia",
+      "value": "Sepia"
+    },
+    {
+      "name": "hexcode",
+      "value": "Hexcode"
+    },
+    {
+      "name": "markup_formats_supported_list",
+      "value": "Markdown, todo.txt, Plaintext"
+    },
+    {
+      "name": "copyright_license_text_official",
+      "value": "\n        ### Copyright © 2017-2025\n        **Gregor Santner**\n        \n**Official project sources:**\n        [Project page](https://github.com/gsantner/markor#readme) | [Source code](https://github.com/gsantner/markor) | [F-Droid](https://f-droid.org/repository/browse/?fdid=net.gsantner.markor)\n    "
+    },
+    {
+      "name": "inject_to_head",
+      "value": "Inject -> head"
+    },
+    {
+      "name": "inject_to_body",
+      "value": "Inject -> body"
+    },
+    {
+      "name": "js_css",
+      "value": "html: <head>CSS, JavaScript</head>"
+    },
+    {
+      "name": "inject_to_head_default",
+      "value": "\n    <style>\n    \nhtml, body {\n    \n/*\n    \nfont-family: sans-serif-condensed;\n    \nfont-size: 80%;\n    \n*/\n    \n}\n    \n</style>\n    \n\n    \n<script type=\"text/javascript\">\n    \nfunction onPageLoaded() {\n    \n/*\n    \nif ('{{ post.text_converter_name }}' == 'MarkdownTextConverter') {\n    \n  window.scrollTo(0, document.body.scrollHeight);\n    \n}\n    \n*/\n    \n}\n    \n</script>\n    "
+    },
+    {
+      "name": "tag",
+      "value": "Tag"
+    },
+    {
+      "name": "tags",
+      "value": "Tags"
+    },
+    {
+      "name": "dotfiles",
+      "value": ".dotfiles"
+    },
+    {
+      "name": "tagging",
+      "value": "Tagging"
+    },
+    {
+      "name": "regex",
+      "value": "Regex"
+    },
+    {
+      "name": "multiline",
+      "value": "Multiline"
+    },
+    {
+      "name": "pref_key__markdown__hl_delay_v2",
+      "value": "pref_key__markdown__hl_delay_v2"
+    },
+    {
+      "name": "pref_key__asciidoc__hl_delay",
+      "value": "pref_key__asciidoc__hl_delay"
+    },
+    {
+      "name": "pref_key__orgmode__hl_delay",
+      "value": "pref_key__orgmode__hl_delay"
+    },
+    {
+      "name": "pref_key__quicknote_filepath",
+      "value": "pref_key__quicknote_filepath"
+    },
+    {
+      "name": "pref_key__markdown__highlight_lineending_two_or_more_space",
+      "value": "pref_key__markdown__highlight_lineending_two_or_more_space"
+    },
+    {
+      "name": "pref_key__asciidoc__highlight_lineending_hard_line_break",
+      "value": "pref_key__asciidoc__highlight_lineending_hard_line_break"
+    },
+    {
+      "name": "pref_key__markdown__auto_renumber_ordered_list",
+      "value": "pref_key__markdown__auto_renumber_ordered_list"
+    },
+    {
+      "name": "pref_key__markdown__reorder_actions",
+      "value": "pref_key__markdown__reorder_actions"
+    },
+    {
+      "name": "pref_key__todotxt__reorder_actions",
+      "value": "pref_key__todotxt__reorder_actions"
+    },
+    {
+      "name": "pref_key__plaintext__reorder_actions",
+      "value": "pref_key__plaintext__reorder_actions"
+    },
+    {
+      "name": "pref_key__orgmode__reorder_actions",
+      "value": "pref_key__orgmode__reorder_actions"
+    },
+    {
+      "name": "pref_key__asciidoc__reorder_actions",
+      "value": "pref_key__asciidoc__reorder_actions"
+    },
+    {
+      "name": "pref_key__markdown__action_keys",
+      "value": "pref_key__markdown__action_keys"
+    },
+    {
+      "name": "pref_key__todotxt__action_keys",
+      "value": "pref_key__todotxt__action_keys"
+    },
+    {
+      "name": "pref_key__orgmode__action_keys",
+      "value": "pref_key__orgmode__action_keys"
+    },
+    {
+      "name": "pref_key__plaintext__action_keys",
+      "value": "pref_key__plaintext__action_keys"
+    },
+    {
+      "name": "pref_key__asciidoc__action_keys",
+      "value": "pref_key__asciidoc__action_keys"
+    },
+    {
+      "name": "pref_key__todotxt__hl_delay",
+      "value": "pref_key__todotxt__hl_delay"
+    },
+    {
+      "name": "pref_key__todo_filepath",
+      "value": "pref_key__todo_filepath"
+    },
+    {
+      "name": "pref_key__todotxt__add_completion_date_for_todos",
+      "value": "pref_key__todotxt__add_completion_date_for_todos"
+    },
+    {
+      "name": "pref_key__todotxt__append_contexts_and_projects_on_end_of_task",
+      "value": "pref_key__todotxt__append_contexts_and_projects_on_end_of_task"
+    },
+    {
+      "name": "pref_key__todotxt__last_used_archive_filename",
+      "value": "pref_key__todotxt__last_used_archive_filename"
+    },
+    {
+      "name": "pref_key__is_preview_first",
+      "value": "pref_key__is_preview_first"
+    },
+    {
+      "name": "pref_key__is_render_rtl",
+      "value": "pref_key__is_render_rtl"
+    },
+    {
+      "name": "pref_key__is_highlighting_activated",
+      "value": "pref_key__is_highlighting_activated"
+    },
+    {
+      "name": "pref_key__is_dynamic_highlighting_activated",
+      "value": "pref_key__is_dynamic_highlighting_activated"
+    },
+    {
+      "name": "pref_key__load_last_directory_at_startup",
+      "value": "pref_key__load_last_directory_at_startup"
+    },
+    {
+      "name": "pref_key__notebook_directory",
+      "value": "pref_key__notebook_directory"
+    },
+    {
+      "name": "pref_key__last_opened_directory",
+      "value": "pref_key__last_opened_directory"
+    },
+    {
+      "name": "pref_key__font_family",
+      "value": "pref_key__font_family"
+    },
+    {
+      "name": "pref_key__editor_font_size",
+      "value": "pref_key__editor_font_size"
+    },
+    {
+      "name": "pref_key__app_theme",
+      "value": "pref_key__app_theme"
+    },
+    {
+      "name": "pref_key__theming_hide_system_statusbar",
+      "value": "pref_key__theming_hide_system_statusbar"
+    },
+    {
+      "name": "pref_key__language",
+      "value": "pref_key__language"
+    },
+    {
+      "name": "pref_key__is_main_recreate_required",
+      "value": "pref_key__is_main_recreate_required"
+    },
+    {
+      "name": "pref_key__file_browser__sort_by_type",
+      "value": "pref_key__file_browser__sort_by_type"
+    },
+    {
+      "name": "pref_key__sort_reverse",
+      "value": "pref_key__sort_reverse"
+    },
+    {
+      "name": "pref_key__is_highlighting_for_hexcolor_activated",
+      "value": "pref_key__is_highlighting_for_hexcolor_activated"
+    },
+    {
+      "name": "pref_key__app_first_start_current_version",
+      "value": "pref_key__app_first_start_current_version"
+    },
+    {
+      "name": "pref_key__editor_line_spacing",
+      "value": "pref_key__editor_line_spacing"
+    },
+    {
+      "name": "pref_key__editor_start_editing_on_bottom",
+      "value": "pref_key__editor_start_editing_on_bottom"
+    },
+    {
+      "name": "pref_key__editor_start_editing_in_center",
+      "value": "pref_key__editor_start_editing_in_center"
+    },
+    {
+      "name": "pref_key__share_into__quicknote",
+      "value": "pref_key__share_into__quicknote"
+    },
+    {
+      "name": "pref_key__share_into__todo",
+      "value": "pref_key__share_into__todo"
+    },
+    {
+      "name": "pref_key__share_into__most_recent_document",
+      "value": "pref_key__share_into__most_recent_document"
+    },
+    {
+      "name": "pref_key__share_into__clipboard",
+      "value": "pref_key__share_into__clipboard"
+    },
+    {
+      "name": "pref_key__share_into__reshare",
+      "value": "pref_key__share_into__reshare"
+    },
+    {
+      "name": "pref_key__share_into__calendar_event",
+      "value": "pref_key__share_into__calendar_event"
+    },
+    {
+      "name": "pref_key__attach_as_link",
+      "value": "pref_key__attach_as_link"
+    },
+    {
+      "name": "pref_key__more_info__settings",
+      "value": "pref_key__more_info__settings"
+    },
+    {
+      "name": "pref_key__more_info__source_code",
+      "value": "pref_key__more_info__source_code"
+    },
+    {
+      "name": "pref_key__more_info__project_license",
+      "value": "pref_key__more_info__project_license"
+    },
+    {
+      "name": "pref_key__more_info__open_source_licenses",
+      "value": "pref_key__more_info__open_source_licenses"
+    },
+    {
+      "name": "pref_key__more_info__bug_reports",
+      "value": "pref_key__more_info__bug_reports"
+    },
+    {
+      "name": "pref_key__more_info__help",
+      "value": "pref_key__more_info__help"
+    },
+    {
+      "name": "pref_key__more_info__rate_app",
+      "value": "pref_key__more_info__rate_app"
+    },
+    {
+      "name": "pref_key__more_info__translate",
+      "value": "pref_key__more_info__translate"
+    },
+    {
+      "name": "pref_key__more_info__join_community",
+      "value": "pref_key__more_info__join_community"
+    },
+    {
+      "name": "pref_key__more_info__app",
+      "value": "pref_key__more_info__app"
+    },
+    {
+      "name": "pref_key__more_info__project_community",
+      "value": "pref_key__more_info__project_community"
+    },
+    {
+      "name": "pref_key__more_info__project_team",
+      "value": "pref_key__more_info__project_team"
+    },
+    {
+      "name": "pref_key__more_info__contributors_public_info",
+      "value": "pref_key__more_info__contributors_public_info"
+    },
+    {
+      "name": "pref_key__more_info__copy_build_information",
+      "value": "pref_key__more_info__copy_build_information"
+    },
+    {
+      "name": "pref_key__editor_textaction_bar_item_padding",
+      "value": "pref_key__editor_textaction_bar_item_padding"
+    },
+    {
+      "name": "pref_key__editor_disable_spelling_red_underline",
+      "value": "pref_key__editor_disable_spelling_red_underline"
+    },
+    {
+      "name": "pref_key__highlight_code_monospace_font",
+      "value": "pref_key__highlight_code_monospace_font"
+    },
+    {
+      "name": "pref_key__highlight_code_block_disabled",
+      "value": "pref_key__highlight_code_block_disabled"
+    },
+    {
+      "name": "pref_key__editor_markdown_bigger_headings_3",
+      "value": "pref_key__editor_markdown_bigger_headings_3"
+    },
+    {
+      "name": "pref_key__editor_unordered_list_character",
+      "value": "pref_key__editor_unordered_list_character"
+    },
+    {
+      "name": "pref_key__recent_documents",
+      "value": "pref_key__recent_documents"
+    },
+    {
+      "name": "pref_key__popular_documents",
+      "value": "pref_key__popular_documents"
+    },
+    {
+      "name": "pref_key__favourite_files",
+      "value": "pref_key__favourite_files"
+    },
+    {
+      "name": "pref_key__select_create_document",
+      "value": "pref_key__select_create_document"
+    },
+    {
+      "name": "pref_key__search_for_target",
+      "value": "pref_key__search_for_target"
+    },
+    {
+      "name": "pref_key__share_into__open_in_browser",
+      "value": "pref_key__share_into__open_in_browser"
+    },
+    {
+      "name": "pref_key__inject_to_head",
+      "value": "pref_key__inject_to_head"
+    },
+    {
+      "name": "pref_key__inject_to_body",
+      "value": "pref_key__inject_to_body"
+    },
+    {
+      "name": "pref_key__markdown_render_math",
+      "value": "pref_key__markdown_render_math"
+    },
+    {
+      "name": "pref_key__markdown_always_shown_yaml_front_matter_keys",
+      "value": "pref_key__markdown_always_shown_yaml_front_matter_keys"
+    },
+    {
+      "name": "pref_key__markdown_newline_newparagraph",
+      "value": "pref_key__markdown_newline_newparagraph"
+    },
+    {
+      "name": "pref_key__markdown_table_of_contents_enabled_levels",
+      "value": "pref_key__markdown_table_of_contents_enabled_levels"
+    },
+    {
+      "name": "pref_key__is_launcher_for_special_files_enabled",
+      "value": "pref_key__is_launcher_for_special_files_enabled"
+    },
+    {
+      "name": "pref_key__basic_color_scheme__bg_light",
+      "value": "pref_key__basic_color_scheme__bg_light"
+    },
+    {
+      "name": "pref_key__basic_color_scheme__fg_light",
+      "value": "pref_key__basic_color_scheme__fg_light"
+    },
+    {
+      "name": "pref_key__basic_color_scheme__bg_dark",
+      "value": "pref_key__basic_color_scheme__bg_dark"
+    },
+    {
+      "name": "pref_key__basic_color_scheme__fg_dark",
+      "value": "pref_key__basic_color_scheme__fg_dark"
+    },
+    {
+      "name": "pref_key__basic_color_scheme_solarized",
+      "value": "pref_key__basic_color_scheme_solarized"
+    },
+    {
+      "name": "pref_key__basic_color_scheme_nord",
+      "value": "pref_key__basic_color_scheme_nord"
+    },
+    {
+      "name": "pref_key__basic_color_scheme_blackorwhite",
+      "value": "pref_key__basic_color_scheme_blackorwhite"
+    },
+    {
+      "name": "pref_key__basic_color_scheme_amoled",
+      "value": "pref_key__basic_color_scheme_amoled"
+    },
+    {
+      "name": "pref_key__basic_color_scheme_markor",
+      "value": "pref_key__basic_color_scheme_markor"
+    },
+    {
+      "name": "pref_key__basic_color_scheme_gruvbox",
+      "value": "pref_key__basic_color_scheme_gruvbox"
+    },
+    {
+      "name": "pref_key__basic_color_scheme_greenscale",
+      "value": "pref_key__basic_color_scheme_greenscale"
+    },
+    {
+      "name": "pref_key__basic_color_scheme_sepia",
+      "value": "pref_key__basic_color_scheme_sepia"
+    },
+    {
+      "name": "pref_key__is_keep_screen_on",
+      "value": "pref_key__keep_screen_on"
+    },
+    {
+      "name": "pref_key__is_disallow_screenshots",
+      "value": "pref_key__is_disallow_screenshots"
+    },
+    {
+      "name": "pref_key__snippet_directory_path",
+      "value": "pref_key__snippet_directory_path"
+    },
+    {
+      "name": "abid_common_delete_lines",
+      "value": "abid_common_delete_lines"
+    },
+    {
+      "name": "abid_common_duplicate_lines",
+      "value": "abid_common_duplicate_lines"
+    },
+    {
+      "name": "abid_common_new_line_below",
+      "value": "abid_common_new_line_below"
+    },
+    {
+      "name": "abid_common_unordered_list_char",
+      "value": "abid_common_unordered_list_char"
+    },
+    {
+      "name": "abid_common_ordered_list_number",
+      "value": "abid_common_ordered_list_number"
+    },
+    {
+      "name": "abid_common_ordered_list_renumber",
+      "value": "abid_common_ordered_list_renumber"
+    },
+    {
+      "name": "abid_common_checkbox_list",
+      "value": "abid_common_checkbox_list"
+    },
+    {
+      "name": "abid_common_special_key",
+      "value": "abid_common_special_key"
+    },
+    {
+      "name": "abid_common_open_link_browser",
+      "value": "abid_common_open_link_browser"
+    },
+    {
+      "name": "abid_common_change_case",
+      "value": "abid_common_change_case"
+    },
+    {
+      "name": "abid_common_color_picker",
+      "value": "abid_common_color_picker"
+    },
+    {
+      "name": "abid_common_time",
+      "value": "abid_common_time"
+    },
+    {
+      "name": "abid_common_web_jump_to_very_top_or_bottom",
+      "value": "abid_common_web_jump_to_very_top_or_bottom"
+    },
+    {
+      "name": "abid_common_web_jump_to_table_of_contents",
+      "value": "abid_common_web_jump_to_table_of_contents"
+    },
+    {
+      "name": "abid_common_view_file_in_other_app",
+      "value": "abid_common_view_file_in_other_app"
+    },
+    {
+      "name": "abid_common_rotate_screen",
+      "value": "abid_common_rotate_screen"
+    },
+    {
+      "name": "abid_common_accordion",
+      "value": "abid_common_accordion"
+    },
+    {
+      "name": "abid_common_indent",
+      "value": "abid_common_indent"
+    },
+    {
+      "name": "abid_common_set_indent_size",
+      "value": "abid_common_set_indent_size"
+    },
+    {
+      "name": "abid_common_deindent",
+      "value": "abid_common_deindent"
+    },
+    {
+      "name": "abid_common_move_text_one_line_up",
+      "value": "abid_common_move_text_one_line_up"
+    },
+    {
+      "name": "abid_common_move_text_one_line_down",
+      "value": "abid_common_move_text_one_line_down"
+    },
+    {
+      "name": "abid_common_insert_snippet",
+      "value": "abid_common_insert_snippet"
+    },
+    {
+      "name": "abid_common_insert_image",
+      "value": "abid_common_insert_image"
+    },
+    {
+      "name": "abid_common_insert_audio",
+      "value": "abid_common_insert_audio"
+    },
+    {
+      "name": "abid_common_insert_link",
+      "value": "abid_common_insert_link"
+    },
+    {
+      "name": "abid_markdown_quote",
+      "value": "abid_markdown_quote"
+    },
+    {
+      "name": "abid_markdown_h1",
+      "value": "abid_markdown_h1"
+    },
+    {
+      "name": "abid_markdown_h2",
+      "value": "abid_markdown_h2"
+    },
+    {
+      "name": "abid_markdown_h3",
+      "value": "abid_markdown_h3"
+    },
+    {
+      "name": "abid_markdown_bold",
+      "value": "abid_markdown_bold"
+    },
+    {
+      "name": "abid_markdown_italic",
+      "value": "abid_markdown_italic"
+    },
+    {
+      "name": "abid_markdown_strikeout",
+      "value": "abid_markdown_strikeout"
+    },
+    {
+      "name": "abid_markdown_code_inline",
+      "value": "abid_markdown_code_inline"
+    },
+    {
+      "name": "abid_markdown_horizontal_line",
+      "value": "abid_markdown_horizontal_line"
+    },
+    {
+      "name": "abid_markdown_table_insert_columns",
+      "value": "abid_markdown_table_insert_columns"
+    },
+    {
+      "name": "abid_asciidoc_h1",
+      "value": "abid_asciidoc_h1"
+    },
+    {
+      "name": "abid_asciidoc_h2",
+      "value": "abid_asciidoc_h2"
+    },
+    {
+      "name": "abid_asciidoc_h3",
+      "value": "abid_asciidoc_h3"
+    },
+    {
+      "name": "abid_asciidoc_h4",
+      "value": "abid_asciidoc_h4"
+    },
+    {
+      "name": "abid_asciidoc_h5",
+      "value": "abid_asciidoc_h5"
+    },
+    {
+      "name": "abid_asciidoc_h6",
+      "value": "abid_asciidoc_h6"
+    },
+    {
+      "name": "abid_asciidoc_checkbox_list",
+      "value": "abid_asciidoc_checkbox_list"
+    },
+    {
+      "name": "abid_asciidoc_unordered_list_char",
+      "value": "abid_asciidoc_unordered_list_char"
+    },
+    {
+      "name": "abid_asciidoc_ordered_list_char",
+      "value": "abid_asciidoc_ordered_list_char"
+    },
+    {
+      "name": "abid_asciidoc_indent_level",
+      "value": "abid_asciidoc_indent"
+    },
+    {
+      "name": "abid_asciidoc_deindent_level",
+      "value": "abid_asciidoc_deindent"
+    },
+    {
+      "name": "abid_asciidoc_bold",
+      "value": "abid_asciidoc_bold"
+    },
+    {
+      "name": "abid_asciidoc_italic",
+      "value": "abid_asciidoc_italic"
+    },
+    {
+      "name": "abid_asciidoc_monospace",
+      "value": "abid_asciidoc_monospace"
+    },
+    {
+      "name": "abid_asciidoc_underline",
+      "value": "abid_asciidoc_underline"
+    },
+    {
+      "name": "abid_asciidoc_overline",
+      "value": "abid_asciidoc_overline"
+    },
+    {
+      "name": "abid_asciidoc_linethrough",
+      "value": "abid_asciidoc_linethrough"
+    },
+    {
+      "name": "abid_asciidoc_nobreak",
+      "value": "abid_asciidoc_nobreak"
+    },
+    {
+      "name": "abid_asciidoc_nowrap",
+      "value": "abid_asciidoc_nowrap"
+    },
+    {
+      "name": "abid_asciidoc_prewrap",
+      "value": "abid_asciidoc_prewrap"
+    },
+    {
+      "name": "abid_asciidoc_highlight",
+      "value": "abid_asciidoc_highlight"
+    },
+    {
+      "name": "abid_asciidoc_subscript",
+      "value": "abid_asciidoc_subscript"
+    },
+    {
+      "name": "abid_asciidoc_superscript",
+      "value": "abid_asciidoc_superscript"
+    },
+    {
+      "name": "abid_asciidoc_break_thematic",
+      "value": "abid_asciidoc_break_thematic"
+    },
+    {
+      "name": "abid_asciidoc_break_page",
+      "value": "abid_asciidoc_break_page"
+    },
+    {
+      "name": "abid_asciidoc_squarebrackets",
+      "value": "abid_asciidoc_squarebrackets"
+    },
+    {
+      "name": "abid_asciidoc_block_comment",
+      "value": "abid_asciidoc_block_comment"
+    },
+    {
+      "name": "abid_asciidoc_block_example",
+      "value": "abid_asciidoc_block_example"
+    },
+    {
+      "name": "abid_asciidoc_block_listing",
+      "value": "abid_asciidoc_block_listing"
+    },
+    {
+      "name": "abid_asciidoc_block_literal",
+      "value": "abid_asciidoc_block_literal"
+    },
+    {
+      "name": "abid_asciidoc_block_open",
+      "value": "abid_asciidoc_block_open"
+    },
+    {
+      "name": "abid_asciidoc_block_sidebar",
+      "value": "abid_asciidoc_block_sidebar"
+    },
+    {
+      "name": "abid_asciidoc_block_table",
+      "value": "abid_asciidoc_block_table"
+    },
+    {
+      "name": "abid_asciidoc_block_pass",
+      "value": "abid_asciidoc_block_pass"
+    },
+    {
+      "name": "abid_asciidoc_block_quote",
+      "value": "abid_asciidoc_block_quote"
+    },
+    {
+      "name": "abid_asciidoc_table_insert_columns",
+      "value": "abid_asciidoc_table_insert_columns"
+    },
+    {
+      "name": "abid_asciidoc_special_key",
+      "value": "abid_asciidoc_special_key"
+    },
+    {
+      "name": "asciidoc_underline",
+      "value": "role - underline"
+    },
+    {
+      "name": "asciidoc_overline",
+      "value": "role - overline"
+    },
+    {
+      "name": "asciidoc_linethrough",
+      "value": "role - linethrough"
+    },
+    {
+      "name": "asciidoc_nobreak",
+      "value": "role - nobreak"
+    },
+    {
+      "name": "asciidoc_nowrap",
+      "value": "role - nowrap"
+    },
+    {
+      "name": "asciidoc_prewrap",
+      "value": "role - prewrap"
+    },
+    {
+      "name": "asciidoc_highlight",
+      "value": "inline - highlight"
+    },
+    {
+      "name": "asciidoc_subscript",
+      "value": "inline - subscript"
+    },
+    {
+      "name": "asciidoc_superscript",
+      "value": "inline - superscript"
+    },
+    {
+      "name": "asciidoc_block_comment",
+      "value": "block - comment"
+    },
+    {
+      "name": "asciidoc_block_example",
+      "value": "block - example"
+    },
+    {
+      "name": "asciidoc_block_listing",
+      "value": "block - listing"
+    },
+    {
+      "name": "asciidoc_block_literal",
+      "value": "block - literal"
+    },
+    {
+      "name": "asciidoc_block_open",
+      "value": "block - open"
+    },
+    {
+      "name": "asciidoc_block_sidebar",
+      "value": "block - sidebar"
+    },
+    {
+      "name": "asciidoc_block_table",
+      "value": "block - table"
+    },
+    {
+      "name": "asciidoc_block_pass",
+      "value": "block - pass"
+    },
+    {
+      "name": "asciidoc_block_quote",
+      "value": "block - quote"
+    },
+    {
+      "name": "asciidoc_block_code",
+      "value": "block - code"
+    },
+    {
+      "name": "asciidoc_block_collapsible",
+      "value": "block - collapsible"
+    },
+    {
+      "name": "asciidoc_break_thematic",
+      "value": "break - thematic"
+    },
+    {
+      "name": "asciidoc_break_page",
+      "value": "break - page"
+    },
+    {
+      "name": "abid_wikitext_h1",
+      "value": "abid_wikitext_h1"
+    },
+    {
+      "name": "abid_wikitext_h2",
+      "value": "abid_wikitext_h2"
+    },
+    {
+      "name": "abid_wikitext_h3",
+      "value": "abid_wikitext_h3"
+    },
+    {
+      "name": "abid_wikitext_h4",
+      "value": "abid_wikitext_h4"
+    },
+    {
+      "name": "abid_wikitext_h5",
+      "value": "abid_wikitext_h5"
+    },
+    {
+      "name": "abid_wikitext_bold",
+      "value": "abid_wikitext_bold"
+    },
+    {
+      "name": "abid_wikitext_italic",
+      "value": "abid_wikitext_italic"
+    },
+    {
+      "name": "abid_wikitext_highlight",
+      "value": "abid_wikitext_highlight"
+    },
+    {
+      "name": "abid_wikitext_strikeout",
+      "value": "abid_wikitext_strikeout"
+    },
+    {
+      "name": "abid_wikitext_code_inline",
+      "value": "abid_wikitext_code_inline"
+    },
+    {
+      "name": "abid_todotxt_toggle_done",
+      "value": "abid_todotxt_toggle_done"
+    },
+    {
+      "name": "abid_todotxt_add_context",
+      "value": "abid_todotxt_add_context"
+    },
+    {
+      "name": "abid_todotxt_add_project",
+      "value": "abid_todotxt_add_project"
+    },
+    {
+      "name": "abid_todotxt_priority",
+      "value": "abid_todotxt_priority"
+    },
+    {
+      "name": "abid_todotxt_archive_done_tasks",
+      "value": "abid_todotxt_archive_done_tasks"
+    },
+    {
+      "name": "abid_todotxt_due_date",
+      "value": "abid_todotxt_due_date"
+    },
+    {
+      "name": "abid_todotxt_sort_todo",
+      "value": "abid_todotxt_sort_todo"
+    },
+    {
+      "name": "abid_orgmode_h1",
+      "value": "abid_orgmode_h1"
+    },
+    {
+      "name": "abid_orgmode_h2",
+      "value": "abid_orgmode_h2"
+    },
+    {
+      "name": "abid_orgmode_h3",
+      "value": "abid_orgmode_h3"
+    },
+    {
+      "name": "abid_orgmode_bold",
+      "value": "abid_orgmode_bold"
+    },
+    {
+      "name": "abid_orgmode_italic",
+      "value": "abid_orgmode_italic"
+    },
+    {
+      "name": "abid_orgmode_strikeout",
+      "value": "abid_orgmode_strikeout"
+    },
+    {
+      "name": "abid_orgmode_underline",
+      "value": "abid_orgmode_underline"
+    },
+    {
+      "name": "abid_orgmode_code_inline",
+      "value": "abid_orgmode_code_inline"
+    },
+    {
+      "name": "jekyll_post",
+      "value": "Jekyll Post"
+    },
+    {
+      "name": "wikitext",
+      "value": "Wikitext / Zim"
+    },
+    {
+      "name": "pref_key__is_multi_window_enabled",
+      "value": "pref_key__is_multi_window_enabled"
+    },
+    {
+      "name": "pref_key__is_enable_experimental_features",
+      "value": "pref_key__is_enable_experimental_features"
+    },
+    {
+      "name": "pref_key__app_start_tab_v2",
+      "value": "pref_key__app_start_tab_v2"
+    },
+    {
+      "name": "pref_key__app_start_folder",
+      "value": "pref_key__app_start_folder"
+    },
+    {
+      "name": "pref_key__swipe_to_change_mode",
+      "value": "pref_key__swipe_to_change_mode"
+    },
+    {
+      "name": "pref_key__filesystem_folder_first",
+      "value": "pref_key__filesystem_folder_first"
+    },
+    {
+      "name": "pref_key__show_dot_files_v2",
+      "value": "pref_key__show_dot_files_v2"
+    },
+    {
+      "name": "pref_key__tab_width_v2",
+      "value": "pref_key__tab_width_v2"
+    },
+    {
+      "name": "pref_key__editor_enable_line_breaking",
+      "value": "pref_key__editor_enable_line_breaking"
+    },
+    {
+      "name": "pref_key__enable_line_numbers",
+      "value": "pref_key__enable_line_numbers"
+    },
+    {
+      "name": "pref_key__exts_to_always_open_in_this_app",
+      "value": "pref_key__exts_to_always_open_in_this_app"
+    },
+    {
+      "name": "pref_key__view_font_size",
+      "value": "pref_key__view_font_size"
+    },
+    {
+      "name": "pref_key__view_mode_link_color",
+      "value": "pref_key__view_mode_link_color"
+    },
+    {
+      "name": "pref_key__open_links_with_chrome_custom_tabs",
+      "value": "pref_key__open_links_with_chrome_custom_tabs"
+    },
+    {
+      "name": "pref_key__request_external_storage",
+      "value": "pref_key__request_external_storage"
+    },
+    {
+      "name": "features",
+      "value": "Features"
+    },
+    {
+      "name": "chrome_custom_tabs",
+      "value": "Chrome Custom Tabs"
+    },
+    {
+      "name": "asciidoc",
+      "value": "AsciiDoc"
+    },
+    {
+      "name": "key_value",
+      "value": "Key - Value"
+    },
+    {
+      "name": "ohm",
+      "value": "Ohm (Ω)"
+    },
+    {
+      "name": "debug",
+      "value": "Debug"
+    },
+    {
+      "name": "text",
+      "value": "Text"
+    },
+    {
+      "name": "inject",
+      "value": "Inject"
+    },
+    {
+      "name": "char_punctation_mark_arrows",
+      "value": "Punctuation mark (»«)"
+    },
+    {
+      "name": "indent",
+      "value": "Indent"
+    },
+    {
+      "name": "deindent",
+      "value": "De-indent"
+    },
+    {
+      "name": "indent_level",
+      "value": "Indent Level"
+    },
+    {
+      "name": "deindent_level",
+      "value": "De-indent Level"
+    },
+    {
+      "name": "assets",
+      "value": "Assets"
+    },
+    {
+      "name": "audio",
+      "value": "Audio"
+    },
+    {
+      "name": "screenshot",
+      "value": "Screenshot"
+    },
+    {
+      "name": "continued_overline",
+      "value": "Continued overline (‾‾‾‾)"
+    },
+    {
+      "name": "shrug",
+      "value": "Shrug (¯\\_(ツ)_/¯)"
+    },
+    {
+      "name": "accordion",
+      "value": "Accordion"
+    },
+    {
+      "name": "pref_key__default_encryption_password",
+      "value": "pref_key__default_encryption_password"
+    },
+    {
+      "name": "pref_key__set_encryption_password",
+      "value": "pref_key__set_encryption_password"
+    },
+    {
+      "name": "empty_string",
+      "value": ""
+    },
+    {
+      "name": "pref_key__new_file_dialog_lastused_encryption",
+      "value": "pref_key__new_file_dialog_lastused_encryption"
+    },
+    {
+      "name": "pref_key__new_file_dialog_lastused_extension",
+      "value": "pref_key__new_file_dialog_lastused_extension"
+    },
+    {
+      "name": "pref_key__new_file_dialog_lastused_type",
+      "value": "pref_key__new_file_dialog_lastused_type"
+    },
+    {
+      "name": "pref_key__file_browser_last_browsed_folder",
+      "value": "pref_key__file_browser_last_browsed_folder"
+    },
+    {
+      "name": "pref_key__file_description_format",
+      "value": "pref_key__file_description_format"
+    },
+    {
+      "name": "pref_key__wikitext_bigger_headings",
+      "value": "pref_key__wikitext_bigger_headings"
+    },
+    {
+      "name": "pref_key__asciidoc_bigger_headings",
+      "value": "pref_key__asciidoc_bigger_headings"
+    },
+    {
+      "name": "pref_key__wikitext_reorder_actions",
+      "value": "pref_key__wikitext_reorder_actions"
+    },
+    {
+      "name": "pref_key__wikitext_action_keys",
+      "value": "pref_key__wikitext_action_keys"
+    },
+    {
+      "name": "pref_key__wikitext_dynamic_notebook_root",
+      "value": "pref_key__wikitext_dynamic_notebook_root"
+    },
+    {
+      "name": "pref_key__max_search_depth",
+      "value": "pref_key__max_search_depth"
+    },
+    {
+      "name": "pref_key__filesearch_ignorelist",
+      "value": "pref_key__filesearch_ignorelist"
+    },
+    {
+      "name": "pref_key__is_search_query_case_sensitive",
+      "value": "pref_key__is_search_query_case_sensitive"
+    },
+    {
+      "name": "pref_key__is_search_query_use_regex",
+      "value": "pref_key__is_search_query_use_regex"
+    },
+    {
+      "name": "pref_key__is_search_in_content",
+      "value": "pref_key__is_search_in_content"
+    },
+    {
+      "name": "pref_key__is_only_first_content_match",
+      "value": "pref_key__is_only_first_content_match"
+    },
+    {
+      "name": "pref_key__restore_settings",
+      "value": "pref_key__restore_settings"
+    },
+    {
+      "name": "pref_key__backup_settings",
+      "value": "pref_key__backup_settings"
+    },
+    {
+      "name": "pref_key__editor_tab_to_indent",
+      "value": "pref_key__editor_tab_to_indent"
+    },
+    {
+      "name": "pref_key__editor_static_cursor",
+      "value": "pref_key__editor_static_cursor"
+    },
+    {
+      "name": "hidden_password",
+      "value": "****"
+    },
+    {
+      "name": "pref_key__todotxt__additional_projects_contexts",
+      "value": "\"pref_key__todotxt__additional_projects_contexts\""
+    },
+    {
+      "name": "pref_key__todotxt__due_date_offset",
+      "value": "pref_key__todotxt_due_date_offset"
+    },
+    {
+      "name": "action_format_keyvalue",
+      "value": "action_format_keyvalue"
+    },
+    {
+      "name": "action_format_plaintext",
+      "value": "action_format_plaintext"
+    },
+    {
+      "name": "action_format_csv",
+      "value": "action_format_csv"
+    },
+    {
+      "name": "action_format_asciidoc",
+      "value": "action_format_asciidoc"
+    },
+    {
+      "name": "action_format_embedbinary",
+      "value": "action_format_embedbinary"
+    },
+    {
+      "name": "action_format_markdown",
+      "value": "action_format_markdown"
+    },
+    {
+      "name": "action_format_todotxt",
+      "value": "action_format_todotxt"
+    },
+    {
+      "name": "action_format_wikitext",
+      "value": "action_format_wikitext"
+    },
+    {
+      "name": "action_format_orgmode",
+      "value": "action_format_orgmode"
+    },
+    {
+      "name": "pref_key__share_into_format",
+      "value": "pref_key__share_into_format"
+    },
+    {
+      "name": "pref_key__attachment_folder_name",
+      "value": "pref_key__attachment_directory_name"
+    },
+    {
+      "name": "pref_key__filetype_template_map",
+      "value": "pref_key__filetype_template_map"
+    },
+    {
+      "name": "pref_key__template_title_format_map",
+      "value": "pref_key__template_title_format_map"
+    },
+    {
+      "name": "pref_key__title_format_list",
+      "value": "pref_key__title_format_list"
+    },
+    {
+      "name": "pref_key__format_share_as_link",
+      "value": "pref_key__format_share_as_link"
+    },
+    {
+      "name": "squarebrackets",
+      "value": "Square Brackets"
+    },
+    {
+      "name": "csv",
+      "value": "CSV"
+    },
+    {
+      "name": "orgmode",
+      "value": "OrgMode"
+    },
+    {
+      "name": "option_select_lines",
+      "value": "option_select_lines"
+    },
+    {
+      "name": "settings",
+      "value": "Settings"
+    },
+    {
+      "name": "light",
+      "value": "Light"
+    },
+    {
+      "name": "dark",
+      "value": "Dark"
+    },
+    {
+      "name": "delete",
+      "value": "Delete"
+    },
+    {
+      "name": "appearance",
+      "value": "Appearance"
+    },
+    {
+      "name": "rename",
+      "value": "Rename"
+    },
+    {
+      "name": "confirm_delete",
+      "value": "Confirm Delete"
+    },
+    {
+      "name": "do_you_really_want_to_delete_this_witharg",
+      "value": "Do you really want to delete this %s?"
+    },
+    {
+      "name": "confirm_overwrite",
+      "value": "Confirm Overwrite"
+    },
+    {
+      "name": "file_already_exists_overwerite",
+      "value": "File already exists, overwrite?"
+    },
+    {
+      "name": "browse_filesystem",
+      "value": "Browse filesystem"
+    },
+    {
+      "name": "title",
+      "value": "Title"
+    },
+    {
+      "name": "empty_directory",
+      "value": "Empty directory"
+    },
+    {
+      "name": "enter_name_of_folder",
+      "value": "Enter the name of your folder"
+    },
+    {
+      "name": "create_folder",
+      "value": "Create Folder"
+    },
+    {
+      "name": "create_new_document",
+      "value": "Create new document"
+    },
+    {
+      "name": "move",
+      "value": "Move"
+    },
+    {
+      "name": "info",
+      "value": "Info"
+    },
+    {
+      "name": "file_folder_already_exists_please_use_a_different_name",
+      "value": "File/folder already exists! Please use a different name"
+    },
+    {
+      "name": "import_from_device",
+      "value": "Import from device"
+    },
+    {
+      "name": "import_",
+      "value": "Import"
+    },
+    {
+      "name": "append_to_witharg",
+      "value": "Append to %s"
+    },
+    {
+      "name": "select_folder",
+      "value": "Select folder"
+    },
+    {
+      "name": "edit",
+      "value": "Edit"
+    },
+    {
+      "name": "search_documents",
+      "value": "Search documents"
+    },
+    {
+      "name": "share_to_arrow",
+      "value": "Share to…"
+    },
+    {
+      "name": "share",
+      "value": "Share"
+    },
+    {
+      "name": "search",
+      "value": "Search"
+    },
+    {
+      "name": "previous_match",
+      "value": "Previous Match"
+    },
+    {
+      "name": "next_match",
+      "value": "Next Match"
+    },
+    {
+      "name": "display_converted_markup",
+      "value": "Display converted markup"
+    },
+    {
+      "name": "editor",
+      "value": "Editor"
+    },
+    {
+      "name": "folders",
+      "value": "Folders"
+    },
+    {
+      "name": "files",
+      "value": "Files"
+    },
+    {
+      "name": "document",
+      "value": "Document"
+    },
+    {
+      "name": "documents",
+      "value": "Documents"
+    },
+    {
+      "name": "html_as_plaintext",
+      "value": "HTML (as plain text)"
+    },
+    {
+      "name": "document_editor_font",
+      "value": "Document Editor Font"
+    },
+    {
+      "name": "theme",
+      "value": "Theme"
+    },
+    {
+      "name": "open_existing_files_in_view_mode",
+      "value": "Open existing files in view mode"
+    },
+    {
+      "name": "about",
+      "value": "About"
+    },
+    {
+      "name": "plaintext",
+      "value": "Plain Text"
+    },
+    {
+      "name": "file",
+      "value": "File"
+    },
+    {
+      "name": "image",
+      "value": "Image"
+    },
+    {
+      "name": "font_size",
+      "value": "Font Size"
+    },
+    {
+      "name": "render_rtl_language",
+      "value": "Render for right-to-left languages"
+    },
+    {
+      "name": "error_cannot_create_notebook_dir__appspecific",
+      "value": "Error: Cannot create notebook directory"
+    },
+    {
+      "name": "last_modified_witharg",
+      "value": "Last modified: %s"
+    },
+    {
+      "name": "last_modified",
+      "value": "Last modified"
+    },
+    {
+      "name": "select_this_folder",
+      "value": "Select this folder"
+    },
+    {
+      "name": "select",
+      "value": "Select"
+    },
+    {
+      "name": "select_all",
+      "value": "Select all"
+    },
+    {
+      "name": "create",
+      "value": "Create"
+    },
+    {
+      "name": "select_entries",
+      "value": "Select entries"
+    },
+    {
+      "name": "one_item_selected",
+      "value": "One item selected"
+    },
+    {
+      "name": "items_selected_witharg",
+      "value": "%d items selected"
+    },
+    {
+      "name": "hide_statusbar_at_this_view",
+      "value": "Hide the status bar in this view"
+    },
+    {
+      "name": "hide_statusbar",
+      "value": "Hide status bar"
+    },
+    {
+      "name": "name",
+      "value": "Name"
+    },
+    {
+      "name": "url_or_path",
+      "value": "URL / Path"
+    },
+    {
+      "name": "insert_link",
+      "value": "Insert link"
+    },
+    {
+      "name": "format_link",
+      "value": "Format link"
+    },
+    {
+      "name": "insert_image",
+      "value": "Insert Image"
+    },
+    {
+      "name": "contributors",
+      "value": "Contributors"
+    },
+    {
+      "name": "save_location",
+      "value": "Save location"
+    },
+    {
+      "name": "saved_location_to",
+      "value": "Saved to %s"
+    },
+    {
+      "name": "select_storage_folder",
+      "value": "Select storage folder"
+    },
+    {
+      "name": "licenses",
+      "value": "Licenses"
+    },
+    {
+      "name": "changelog",
+      "value": "Changelog"
+    },
+    {
+      "name": "more_info",
+      "value": "More info"
+    },
+    {
+      "name": "show_license_of_the_app",
+      "value": "Show license of the app"
+    },
+    {
+      "name": "show_third_party_licenses",
+      "value": "Show 3rd party licenses"
+    },
+    {
+      "name": "language_change_restart_description",
+      "value": "Change language of this app. Restart app for changes to take effect"
+    },
+    {
+      "name": "language",
+      "value": "Language"
+    },
+    {
+      "name": "storage_permission_required",
+      "value": "Storage permission required to read and write files"
+    },
+    {
+      "name": "open_with",
+      "value": "Open with"
+    },
+    {
+      "name": "sort_by",
+      "value": "Sort by"
+    },
+    {
+      "name": "date",
+      "value": "Date"
+    },
+    {
+      "name": "deleteme____1",
+      "value": "Name"
+    },
+    {
+      "name": "size",
+      "value": "Size"
+    },
+    {
+      "name": "reverse_order",
+      "value": "Reverse order"
+    },
+    {
+      "name": "contribute",
+      "value": "Contribute"
+    },
+    {
+      "name": "project_page",
+      "value": "Project page"
+    },
+    {
+      "name": "press_back_again_to_exit",
+      "value": "Press 'Back' again to exit"
+    },
+    {
+      "name": "exit",
+      "value": "Exit"
+    },
+    {
+      "name": "undo",
+      "value": "Undo"
+    },
+    {
+      "name": "redo",
+      "value": "Redo"
+    },
+    {
+      "name": "more",
+      "value": "More"
+    },
+    {
+      "name": "notebook",
+      "value": "Notebook"
+    },
+    {
+      "name": "help",
+      "value": "Help"
+    },
+    {
+      "name": "todo_list",
+      "value": "To-Do List"
+    },
+    {
+      "name": "task",
+      "value": "Task"
+    },
+    {
+      "name": "context",
+      "value": "Context"
+    },
+    {
+      "name": "list",
+      "value": "List"
+    },
+    {
+      "name": "priority",
+      "value": "Priority"
+    },
+    {
+      "name": "history",
+      "value": "History"
+    },
+    {
+      "name": "sync",
+      "value": "Sync"
+    },
+    {
+      "name": "search_or_custom",
+      "value": "Search / Custom"
+    },
+    {
+      "name": "save",
+      "value": "Save"
+    },
+    {
+      "name": "update",
+      "value": "Update"
+    },
+    {
+      "name": "clear",
+      "value": "Clear"
+    },
+    {
+      "name": "due_date",
+      "value": "Due date"
+    },
+    {
+      "name": "current_date",
+      "value": "Current date"
+    },
+    {
+      "name": "archive",
+      "value": "Archive"
+    },
+    {
+      "name": "add_task",
+      "value": "Add task"
+    },
+    {
+      "name": "add_x_witharg",
+      "value": "Add %s"
+    },
+    {
+      "name": "document_to_be_loaded_and_saved_as_witharg",
+      "value": "Document to be loaded and saved as \"%s\""
+    },
+    {
+      "name": "save_or_not",
+      "value": "Do you want to save the changes you made?"
+    },
+    {
+      "name": "reload_or_not",
+      "value": "Do you want to abandon the changes and reload?"
+    },
+    {
+      "name": "refresh",
+      "value": "Refresh"
+    },
+    {
+      "name": "create_shortcut",
+      "value": "Create shortcut"
+    },
+    {
+      "name": "tried_to_create_shortcut_for_this_notice",
+      "value": "Tried to create a shortcut to your home screen. Note that some launchers may not support this."
+    },
+    {
+      "name": "file_not_in_save_path_do_import_notice__appspecific",
+      "value": "The selected file is not located in the app's notebook directory. Do you want to copy it to the current folder? This will overwrite any existing file with the same name."
+    },
+    {
+      "name": "file_not_in_current_folder_do_copy__appspecific",
+      "value": "The file is not located in the current folder. Do you want to copy it to the current folder? This will overwrite any existing file with the same name."
+    },
+    {
+      "name": "files_and_folders",
+      "value": "Files and folders"
+    },
+    {
+      "name": "document_browser",
+      "value": "Document browser"
+    },
+    {
+      "name": "file_browser",
+      "value": "File Browser"
+    },
+    {
+      "name": "set_due_date",
+      "value": "Set due date"
+    },
+    {
+      "name": "insert_replace_date",
+      "value": "Insert date"
+    },
+    {
+      "name": "create_note",
+      "value": "Create Note"
+    },
+    {
+      "name": "special_documents",
+      "value": "Special documents"
+    },
+    {
+      "name": "keep_screen_on",
+      "value": "Keep screen on"
+    },
+    {
+      "name": "disallow_screenshots",
+      "value": "Disallow screenshots"
+    },
+    {
+      "name": "back_to_previous_folder",
+      "value": "Back to previous folder"
+    },
+    {
+      "name": "app_settings",
+      "value": "App Settings"
+    },
+    {
+      "name": "editor_settings",
+      "value": "Editor Settings"
+    },
+    {
+      "name": "remember_last_folder_location_on_startup",
+      "value": "Remember last folder location on startup"
+    },
+    {
+      "name": "number_of_files_witharg",
+      "value": "Number of files: %d"
+    },
+    {
+      "name": "app_wide",
+      "value": "App-wide"
+    },
+    {
+      "name": "main_view",
+      "value": "Main View"
+    },
+    {
+      "name": "overall_theme_used_in_app",
+      "value": "The overall theme used in the app"
+    },
+    {
+      "name": "remember_last_directory",
+      "value": "Remember last directory"
+    },
+    {
+      "name": "syntax_highlighting",
+      "value": "Syntax Highlighting"
+    },
+    {
+      "name": "highlighting_delay",
+      "value": "Highlighting delay"
+    },
+    {
+      "name": "highlighting_delay_lower_value_more_battery_drain_description__appspecific",
+      "value": "Delay in milliseconds for highlighting refresh. A lower value will start highlighting earlier, but it will drain your battery and may slow down the app on older devices."
+    },
+    {
+      "name": "highlighting_enabled_or_not__appspecific",
+      "value": "Control whether entered text should be highlighted or not"
+    },
+    {
+      "name": "control_font_size_in_editor",
+      "value": "Control the font size used in the editor"
+    },
+    {
+      "name": "textactions_show_useful_actions_description__appspecific",
+      "value": "Show a bar with handy buttons on bottom. These text actions modify the text or run an action based on the text."
+    },
+    {
+      "name": "load_last_opened_folder_at_startup",
+      "value": "Load the last opened folder at startup"
+    },
+    {
+      "name": "format",
+      "value": "Format"
+    },
+    {
+      "name": "contexts",
+      "value": "Contexts"
+    },
+    {
+      "name": "project",
+      "value": "Project"
+    },
+    {
+      "name": "projects",
+      "value": "Projects"
+    },
+    {
+      "name": "none",
+      "value": "None"
+    },
+    {
+      "name": "other",
+      "value": "Other"
+    },
+    {
+      "name": "empty_file",
+      "value": "Empty file"
+    },
+    {
+      "name": "break_page_pdf_print",
+      "value": "Break page (PDF/Printing)"
+    },
+    {
+      "name": "underline",
+      "value": "Underline"
+    },
+    {
+      "name": "underline_hex_color_wether_or_not_to_description__appspecific",
+      "value": "Whether to underline hex color codes according to color"
+    },
+    {
+      "name": "underline_hex_color_codes",
+      "value": "Underline Hex Color Codes"
+    },
+    {
+      "name": "insert_current_date_when_starting_new_task",
+      "value": "Insert the current date when starting a new task"
+    },
+    {
+      "name": "tasks_with_todays_date",
+      "value": "Tasks with today's date"
+    },
+    {
+      "name": "append_contexts_and_projects",
+      "value": "Append contexts and projects"
+    },
+    {
+      "name": "append_contexts_and_projects_on_end_of_task",
+      "value": "Append contexts and projects at the end of a task when using the appropriate text action"
+    },
+    {
+      "name": "rtl_rendering",
+      "value": "RTL rendering"
+    },
+    {
+      "name": "highlight_line_ending",
+      "value": "Highlight line ending"
+    },
+    {
+      "name": "highlight_line_ending_if_two_or_more_spaces",
+      "value": "Highlight spaces at the end of lines containing two or more spaces"
+    },
+    {
+      "name": "use_monospace_for_code",
+      "value": "Use monospace font for code"
+    },
+    {
+      "name": "disable_code_block_highlight",
+      "value": "Disable highlighting for code blocks"
+    },
+    {
+      "name": "auto_renumber_ordered_list",
+      "value": "Auto-renumber ordered lists"
+    },
+    {
+      "name": "auto_renumber_ordered_list_slowdown",
+      "value": "This option may impact app performance."
+    },
+    {
+      "name": "use_different_fonttype_slow_down",
+      "value": "Make use of a different font type. Changing it dynamically impacts app performance."
+    },
+    {
+      "name": "general",
+      "value": "General"
+    },
+    {
+      "name": "resources",
+      "value": "Resources"
+    },
+    {
+      "name": "space_between_lines_in_percent",
+      "value": "Space between lines in percent"
+    },
+    {
+      "name": "line_spacing",
+      "value": "Line Spacing"
+    },
+    {
+      "name": "archive_does_move_done_tasks",
+      "value": "Move done tasks to specified file in same folder"
+    },
+    {
+      "name": "sort_tasks_by_selected_order",
+      "value": "Sort tasks by selected order"
+    },
+    {
+      "name": "special_key",
+      "value": "Special Key"
+    },
+    {
+      "name": "asciidoc_special_key",
+      "value": "Special AsciiDoc Content"
+    },
+    {
+      "name": "key_page_up",
+      "value": "Page Up (PgUp)"
+    },
+    {
+      "name": "key_page_down",
+      "value": "Page Down (PgDn)"
+    },
+    {
+      "name": "key_pos_1",
+      "value": "Line Start (Home)"
+    },
+    {
+      "name": "key_pos_end",
+      "value": "Line End (End)"
+    },
+    {
+      "name": "key_pos_1_document",
+      "value": "Document Start (Alt + ↑)"
+    },
+    {
+      "name": "key_pos_end_document",
+      "value": "Document End (Alt + ↓)"
+    },
+    {
+      "name": "jump_to_cursor",
+      "value": "Jump to cursor"
+    },
+    {
+      "name": "duplicate_hotkey",
+      "value": "Duplicate (Ctrl + D)"
+    },
+    {
+      "name": "move_text_one_line_up",
+      "value": "Move line up (Ctrl + ↑)"
+    },
+    {
+      "name": "move_text_one_line_down",
+      "value": "Move line down (Ctrl + ↓)"
+    },
+    {
+      "name": "go_to_line_hotkey",
+      "value": "Go to line (Ctrl + G)"
+    },
+    {
+      "name": "start_new_line_below",
+      "value": "Start new line (Shift + Enter)"
+    },
+    {
+      "name": "select_current_line",
+      "value": "Select current line (Ctrl + L)"
+    },
+    {
+      "name": "select_lines_hotkey",
+      "value": "Select lines (Ctrl + Alt + L)"
+    },
+    {
+      "name": "key_ctrl_a",
+      "value": "Select all (Ctrl+A)"
+    },
+    {
+      "name": "key_tab",
+      "value": "Tabulator (Tab)"
+    },
+    {
+      "name": "zero_width_space",
+      "value": "Zero-width space (&#8203;)"
+    },
+    {
+      "name": "em_space",
+      "value": "Em space (&emsp;)"
+    },
+    {
+      "name": "start_on_bottom",
+      "value": "Start on bottom"
+    },
+    {
+      "name": "start_on_bottom_when_loading_document",
+      "value": "Upon loading a document, position cursor at its end"
+    },
+    {
+      "name": "unordered_list_character",
+      "value": "Unordered list character"
+    },
+    {
+      "name": "character_to_start_items_of_unordered_list_with",
+      "value": "Which character to use to denote unordered lists"
+    },
+    {
+      "name": "unordered_list_char_dash",
+      "value": "Dash (-)"
+    },
+    {
+      "name": "unordered_list_char_asterisk",
+      "value": "Asterisk (*)"
+    },
+    {
+      "name": "unordered_list_char_plus",
+      "value": "Plus (+)"
+    },
+    {
+      "name": "filemanager_doesnot_supply_required_data__appspecific",
+      "value": "Markor can only edit local, offline available documents and does not support file managers that do not provide the full file path."
+    },
+    {
+      "name": "file_does_not_exist_and_cant_be_created",
+      "value": "File or directory does not exist and can not be created"
+    },
+    {
+      "name": "permissions",
+      "value": "Permissions"
+    },
+    {
+      "name": "permission_paths_revert",
+      "value": "Revert to default paths?"
+    },
+    {
+      "name": "permission_not_granted",
+      "value": "Permission not granted"
+    },
+    {
+      "name": "sync_to_local_folder_notice",
+      "value": "Note: Sync apps may place files in custom folders. Open them by changing Markor's document folder accordingly, or in another file manager."
+    },
+    {
+      "name": "vertical_alignment",
+      "value": "Vertical alignment"
+    },
+    {
+      "name": "horizontal_alignment",
+      "value": "Horizontal alignment"
+    },
+    {
+      "name": "default_",
+      "value": "Default"
+    },
+    {
+      "name": "left",
+      "value": "Left"
+    },
+    {
+      "name": "right",
+      "value": "Right"
+    },
+    {
+      "name": "top",
+      "value": "Top"
+    },
+    {
+      "name": "bottom",
+      "value": "Bottom"
+    },
+    {
+      "name": "center",
+      "value": "Center"
+    },
+    {
+      "name": "actionbutton_spacing",
+      "value": "ActionButton spacing"
+    },
+    {
+      "name": "horizontal_space_between_actionbuttons",
+      "value": "Horizontal space between ActionButtons"
+    },
+    {
+      "name": "center_text",
+      "value": "Center text"
+    },
+    {
+      "name": "edit_text_in_center_of_screen",
+      "value": "Edit text in the center of the screen"
+    },
+    {
+      "name": "clipboard",
+      "value": "Clipboard"
+    },
+    {
+      "name": "link_copied",
+      "value": "Link copied!"
+    },
+    {
+      "name": "select_existing_document",
+      "value": "Select existing document"
+    },
+    {
+      "name": "select_create_document",
+      "value": "Select or create document"
+    },
+    {
+      "name": "select_create_folder",
+      "value": "Select or create folder"
+    },
+    {
+      "name": "open_source_licenses",
+      "value": "Open Source Licenses"
+    },
+    {
+      "name": "rate_this_app",
+      "value": "Rate this app"
+    },
+    {
+      "name": "translate",
+      "value": "Translate"
+    },
+    {
+      "name": "more_info_and_help",
+      "value": "More info and help"
+    },
+    {
+      "name": "report_bugs",
+      "value": "Report bugs"
+    },
+    {
+      "name": "do_you_have_a_question_or_problem",
+      "value": "Do you have a question or a problem?"
+    },
+    {
+      "name": "join_community",
+      "value": "Join the Community"
+    },
+    {
+      "name": "bug_reports_suggest_improvements",
+      "value": "Give feedback, report bugs or suggest improvements"
+    },
+    {
+      "name": "help_translating_this_app",
+      "value": "Translate this app into other languages"
+    },
+    {
+      "name": "source_code",
+      "value": "Source Code"
+    },
+    {
+      "name": "project_license",
+      "value": "Project License"
+    },
+    {
+      "name": "contribute_code_to_this_project_anybody_welcome",
+      "value": "Contribute code to the project. Everybody is welcome to do so, including newcomers"
+    },
+    {
+      "name": "project_team",
+      "value": "Project Team"
+    },
+    {
+      "name": "community",
+      "value": "Community"
+    },
+    {
+      "name": "contributors_public_add_yourself_description",
+      "value": "Show contributor info. Provide it to be shown here on an opt-in basis after contributing"
+    },
+    {
+      "name": "descending",
+      "value": "descending"
+    },
+    {
+      "name": "ascending",
+      "value": "ascending"
+    },
+    {
+      "name": "disable_spelling_underline",
+      "value": "Disable spelling underline"
+    },
+    {
+      "name": "spellcheck_keyboard_suggestion_stay_red_underline_vanishes",
+      "value": "Keyboard suggestions stay, red underline vanishes"
+    },
+    {
+      "name": "location",
+      "value": "Location"
+    },
+    {
+      "name": "text_lines",
+      "value": "Text Lines"
+    },
+    {
+      "name": "text_characters",
+      "value": "Text Characters"
+    },
+    {
+      "name": "text_words",
+      "value": "Text Words"
+    },
+    {
+      "name": "directory",
+      "value": "Directory"
+    },
+    {
+      "name": "recently_viewed_documents",
+      "value": "Recently viewed documents"
+    },
+    {
+      "name": "details",
+      "value": "Details"
+    },
+    {
+      "name": "calendar",
+      "value": "Calendar"
+    },
+    {
+      "name": "warning_disallowed_sd_access",
+      "value": "Warning! The app doesn't have the permission to save this file, all changes will be lost. There is no possibility to resolve the problem or to confirm something, Android denies any access here."
+    },
+    {
+      "name": "error_picture_selection",
+      "value": "No picture selected, taken or saved."
+    },
+    {
+      "name": "gallery_picture",
+      "value": "Gallery picture"
+    },
+    {
+      "name": "camera_picture",
+      "value": "Camera picture"
+    },
+    {
+      "name": "enable_undo_and_redo_be_patient",
+      "value": "Enable undo and redo actions. Only suited for advanced use, be patient to not delete something important. Close and open editor to clear history."
+    },
+    {
+      "name": "description",
+      "value": "Description"
+    },
+    {
+      "name": "edit_picture",
+      "value": "Edit picture"
+    },
+    {
+      "name": "math",
+      "value": "Math"
+    },
+    {
+      "name": "enter_yaml_front_matter_attributes_to_show",
+      "value": "Display entered YAML Front Matter attributes on top at viewed documents. Enter keys separated by commas. Leave empty for none or use '*' for all. \n\nIf any attribute is defined in the document (i.e. title: 'Hello') and there is {{ post.title }} in your document too it is replaced. You can make a custom Front Matter heading this way."
+    },
+    {
+      "name": "table_of_contents",
+      "value": "Table of contents"
+    },
+    {
+      "name": "miscellaneous",
+      "value": "Miscellaneous"
+    },
+    {
+      "name": "prefer_view",
+      "value": "Prefer view"
+    },
+    {
+      "name": "no_calendar_app_is_installed",
+      "value": "No calendar app is installed!"
+    },
+    {
+      "name": "popular_documents",
+      "value": "Popular documents"
+    },
+    {
+      "name": "color",
+      "value": "Color"
+    },
+    {
+      "name": "basic_color_scheme",
+      "value": "Basic color scheme"
+    },
+    {
+      "name": "background_foreground_color_in_editor_works_dark_light",
+      "value": "Changes background and foreground color of the text editor. Adjusts to app theme so available in light and dark theme. Syntax highlighting colors remain the same."
+    },
+    {
+      "name": "preset",
+      "value": "Preset"
+    },
+    {
+      "name": "foreground",
+      "value": "Foreground"
+    },
+    {
+      "name": "background",
+      "value": "Background"
+    },
+    {
+      "name": "set_foreground_or_background_color_hexcolor_also_possible",
+      "value": "Set foreground or background color of text? Inserting hex color code is also possible."
+    },
+    {
+      "name": "type",
+      "value": "Type"
+    },
+    {
+      "name": "folder",
+      "value": "Folder"
+    },
+    {
+      "name": "folder_is_created_without_extension",
+      "value": "- Folder is created without file extension"
+    },
+    {
+      "name": "keep_existing_file",
+      "value": "- Files and folders are not overwritten"
+    },
+    {
+      "name": "multiple_windows",
+      "value": "Multiple windows"
+    },
+    {
+      "name": "font",
+      "value": "Font"
+    },
+    {
+      "name": "open_new_documents_always_in_new_window",
+      "value": "Open documents always in separate windows. Switch using the 'recents' key of your device."
+    },
+    {
+      "name": "enter_or_select_format",
+      "value": "Enter or select format"
+    },
+    {
+      "name": "pick_date",
+      "value": "Pick date"
+    },
+    {
+      "name": "pick_time",
+      "value": "Pick time"
+    },
+    {
+      "name": "get_format_instead_date_or_time",
+      "value": "Get format instead date or time"
+    },
+    {
+      "name": "use_current_date_and_time",
+      "value": "Use current date & time"
+    },
+    {
+      "name": "result",
+      "value": "Result"
+    },
+    {
+      "name": "just_time",
+      "value": "Time only"
+    },
+    {
+      "name": "just_date",
+      "value": "Date only"
+    },
+    {
+      "name": "last_used",
+      "value": "Last used"
+    },
+    {
+      "name": "my_note",
+      "value": "my_note"
+    },
+    {
+      "name": "close",
+      "value": "Close"
+    },
+    {
+      "name": "cancel",
+      "value": "Cancel"
+    },
+    {
+      "name": "app_start_tab",
+      "value": "App start tab"
+    },
+    {
+      "name": "tab_to_select_at_start",
+      "value": "Tab to select when starting the app"
+    },
+    {
+      "name": "swipe_to_change_mode",
+      "value": "Swipe to change mode"
+    },
+    {
+      "name": "swipe_to_change_to_edit_or_view_mode",
+      "value": "Swipe to change to edit or view mode (opposite of the current mode)"
+    },
+    {
+      "name": "folder_first",
+      "value": "Folder first"
+    },
+    {
+      "name": "go_to",
+      "value": "Go to"
+    },
+    {
+      "name": "go_to_line",
+      "value": "Go to a specific line"
+    },
+    {
+      "name": "select_lines",
+      "value": "Select lines"
+    },
+    {
+      "name": "current_line",
+      "value": "Current line"
+    },
+    {
+      "name": "select_lines_sample",
+      "value": "e.g. 1:2, 1:, :2, :, 1"
+    },
+    {
+      "name": "line_number",
+      "value": "Line number"
+    },
+    {
+      "name": "appdata_public",
+      "value": "AppData (public)"
+    },
+    {
+      "name": "appdata_private",
+      "value": "AppData (private)"
+    },
+    {
+      "name": "appdata_sdcard",
+      "value": "AppData (SD Card)"
+    },
+    {
+      "name": "internal_storage",
+      "value": "Internal storage"
+    },
+    {
+      "name": "open_the_document_from_main_view",
+      "value": "You can open the document from main view on the bottom, the file browser or the launcher. There is also a option to append text shared into Markor."
+    },
+    {
+      "name": "notebook_is_the_home_of_your_files",
+      "value": "Notebook is the folder that Markor loads in the file browser when the app is started. It is the home folder of your files."
+    },
+    {
+      "name": "quicknote_is_the_fastest_option_to_write_down_notes",
+      "value": "QuickNote is the fastest option to write down notes. It is a file in Markdown format with default location >Notebook/QuickNote.md<, you can set a custom filepath in the settings."
+    },
+    {
+      "name": "todo_is_the_easiest_way_",
+      "value": "Manage your tasks with ToDo. It is a file in todo.txt format with default location >Notebook/todo.txt<, you can set a custom filepath in the settings."
+    },
+    {
+      "name": "navigationbar_color",
+      "value": "Navigation bar color"
+    },
+    {
+      "name": "black",
+      "value": "Black"
+    },
+    {
+      "name": "white",
+      "value": "White"
+    },
+    {
+      "name": "view",
+      "value": "View"
+    },
+    {
+      "name": "view_mode",
+      "value": "View Mode"
+    },
+    {
+      "name": "edit_mode",
+      "value": "Edit Mode"
+    },
+    {
+      "name": "mount_storage",
+      "value": "Mount storage"
+    },
+    {
+      "name": "application_needs_access_to_storage_mount_it",
+      "value": "Permission is required to access this storage. Mount the storage to give access. Confirm this dialog to get a popup. Select the storage there and press select."
+    },
+    {
+      "name": "share_into",
+      "value": "Share into"
+    },
+    {
+      "name": "favourite",
+      "value": "Favourite"
+    },
+    {
+      "name": "favourites",
+      "value": "Favourites"
+    },
+    {
+      "name": "please_wait",
+      "value": "Please wait"
+    },
+    {
+      "name": "loading_large_file_may_take_a_moment_witharg",
+      "value": "Opening a large file (%s), this may take a moment."
+    },
+    {
+      "name": "app_start_folder",
+      "value": "App start folder"
+    },
+    {
+      "name": "tab_width",
+      "value": "Tab width"
+    },
+    {
+      "name": "amount_of_space_for_tab",
+      "value": "Amount of space characters to display tabulator"
+    },
+    {
+      "name": "selected_file_may_be_a_textfile_want_to_open_in_editor",
+      "value": "The selected file may be a plaintext file. Do you want to open it in the editor, or in another app?\n\nDo not try to open binary files. If you are not sure, open with other app."
+    },
+    {
+      "name": "list_in_recent_files",
+      "value": "List in recent files"
+    },
+    {
+      "name": "reload",
+      "value": "Reload"
+    },
+    {
+      "name": "wrap_words",
+      "value": "Wrap Words"
+    },
+    {
+      "name": "line_numbers",
+      "value": "Line Numbers"
+    },
+    {
+      "name": "soft_break_if_not_fit_to_width_else_enable_horizontal_scrolling",
+      "value": "Soft break if text doesn't fit to screen width. Else enable horizontal scrolling."
+    },
+    {
+      "name": "recursive_search_in_location",
+      "value": "Recursive search in %s"
+    },
+    {
+      "name": "always_open_with_this_app",
+      "value": "Always open with this app"
+    },
+    {
+      "name": "always_open_files_with_this_app_when_list_contains_file_extension",
+      "value": "Always open files with this app when the list contains the file extension. Use 'None, .html, .css , .js' for example if you want to edit web files and those without file extension."
+    },
+    {
+      "name": "open_file_with",
+      "value": "Open file with"
+    },
+    {
+      "name": "rotate",
+      "value": "Rotate"
+    },
+    {
+      "name": "template",
+      "value": "Template"
+    },
+    {
+      "name": "send_debug_log",
+      "value": "Send Debug Log"
+    },
+    {
+      "name": "print_pdf",
+      "value": "Print / PDF"
+    },
+    {
+      "name": "bigger_headings",
+      "value": "Bigger headings"
+    },
+    {
+      "name": "increase_text_size_of_headings_according_to_level",
+      "value": "Increase text size of headers according to level (# h1, ## h2. ### h3…)"
+    },
+    {
+      "name": "current",
+      "value": "Current"
+    },
+    {
+      "name": "record_audio",
+      "value": "Record Audio"
+    },
+    {
+      "name": "attach",
+      "value": "Attach"
+    },
+    {
+      "name": "attachment",
+      "value": "Attachment"
+    },
+    {
+      "name": "copy_file",
+      "value": "Copy file"
+    },
+    {
+      "name": "page",
+      "value": "Page"
+    },
+    {
+      "name": "experimental_features",
+      "value": "Experimental features"
+    },
+    {
+      "name": "tools",
+      "value": "Tools"
+    },
+    {
+      "name": "reading",
+      "value": "Reading"
+    },
+    {
+      "name": "read",
+      "value": "Read"
+    },
+    {
+      "name": "table",
+      "value": "Table"
+    },
+    {
+      "name": "how_much_columns_press_table_button_long_to_start_table",
+      "value": "How many columns? Press table button long to start a table (insert header), press short to add a row."
+    },
+    {
+      "name": "example_of_a_markdown_table",
+      "value": "Example of a Markdown table"
+    },
+    {
+      "name": "delete_lines",
+      "value": "Delete lines"
+    },
+    {
+      "name": "duplicate_lines",
+      "value": "Duplicate lines"
+    },
+    {
+      "name": "unordered_list",
+      "value": "Unordered list"
+    },
+    {
+      "name": "ordered_list",
+      "value": "Ordered list"
+    },
+    {
+      "name": "check_list",
+      "value": "Check list"
+    },
+    {
+      "name": "open_link",
+      "value": "Open link"
+    },
+    {
+      "name": "common_color_picker",
+      "value": "Color picker"
+    },
+    {
+      "name": "date_and_time",
+      "value": "Date and time"
+    },
+    {
+      "name": "jump_to_bottom",
+      "value": "Jump to bottom"
+    },
+    {
+      "name": "quote",
+      "value": "Quote"
+    },
+    {
+      "name": "heading",
+      "value": "Heading"
+    },
+    {
+      "name": "heading_1",
+      "value": "Heading 1"
+    },
+    {
+      "name": "heading_2",
+      "value": "Heading 2"
+    },
+    {
+      "name": "heading_3",
+      "value": "Heading 3"
+    },
+    {
+      "name": "heading_4",
+      "value": "Heading 4"
+    },
+    {
+      "name": "heading_5",
+      "value": "Heading 5"
+    },
+    {
+      "name": "heading_6",
+      "value": "Heading 6"
+    },
+    {
+      "name": "bold",
+      "value": "Bold"
+    },
+    {
+      "name": "italic",
+      "value": "Italic"
+    },
+    {
+      "name": "highlighted",
+      "value": "Highlighted"
+    },
+    {
+      "name": "strikeout",
+      "value": "Strike out"
+    },
+    {
+      "name": "inline_code",
+      "value": "Inline code"
+    },
+    {
+      "name": "horizontal_line",
+      "value": "Horizontal line"
+    },
+    {
+      "name": "toggle_done",
+      "value": "Toggle done"
+    },
+    {
+      "name": "link_color",
+      "value": "Link color"
+    },
+    {
+      "name": "add_context",
+      "value": "Add context"
+    },
+    {
+      "name": "add_project",
+      "value": "Add project"
+    },
+    {
+      "name": "archive_completed_tasks",
+      "value": "Archive completed tasks"
+    },
+    {
+      "name": "overline",
+      "value": "Overline"
+    },
+    {
+      "name": "superscript",
+      "value": "Superscript"
+    },
+    {
+      "name": "subscript",
+      "value": "Subscript"
+    },
+    {
+      "name": "create_new_file_or_folder",
+      "value": "Create a new file or folder"
+    },
+    {
+      "name": "choose_format",
+      "value": "Choose format"
+    },
+    {
+      "name": "clear_selection",
+      "value": "Clear selection"
+    },
+    {
+      "name": "selected",
+      "value": "Selected"
+    },
+    {
+      "name": "back",
+      "value": "Back"
+    },
+    {
+      "name": "expand_collapse",
+      "value": "Expand / Collapse"
+    },
+    {
+      "name": "essential",
+      "value": "Essential"
+    },
+    {
+      "name": "append_human_readable_uuid_to_new_tasks",
+      "value": "Append human readable UUID to new tasks"
+    },
+    {
+      "name": "action_order",
+      "value": "Action order"
+    },
+    {
+      "name": "show_bottom_action_bar",
+      "value": "Show bottom action bar"
+    },
+    {
+      "name": "toggle_action_visibility",
+      "value": "Toggle action visibility"
+    },
+    {
+      "name": "load_default_settings",
+      "value": "Load default settings"
+    },
+    {
+      "name": "drag",
+      "value": "Drag"
+    },
+    {
+      "name": "created",
+      "value": "Created"
+    },
+    {
+      "name": "line_based_search",
+      "value": "Line based search"
+    },
+    {
+      "name": "no_results",
+      "value": "No results"
+    },
+    {
+      "name": "bad_pattern",
+      "value": "Invalid pattern"
+    },
+    {
+      "name": "toggle_find_replace",
+      "value": "Toggle Find/Replace"
+    },
+    {
+      "name": "new_line",
+      "value": "New Line"
+    },
+    {
+      "name": "match_case",
+      "value": "Match Case"
+    },
+    {
+      "name": "match_whole_word",
+      "value": "Match Whole Word"
+    },
+    {
+      "name": "use_regular_expression",
+      "value": "Use Regular Expression"
+    },
+    {
+      "name": "find_in_selection",
+      "value": "Find in Selection"
+    },
+    {
+      "name": "preserve_case",
+      "value": "Preserve Case"
+    },
+    {
+      "name": "file_encryption_password",
+      "value": "File encryption password"
+    },
+    {
+      "name": "no_password_set_cannot_encrypt_decrypt",
+      "value": "No password set, cannot encrypt or decrypt.\nGo to Settings -> General -> Password to set a password."
+    },
+    {
+      "name": "encrypt_file_content",
+      "value": "Encrypt file content"
+    },
+    {
+      "name": "utf8_with_bom",
+      "value": "UTF-8 with BOM"
+    },
+    {
+      "name": "could_not_encrypt_file_content_the_file_was_not_saved",
+      "value": "Could not encrypt file content. The file was not saved."
+    },
+    {
+      "name": "could_not_decrypt_file_content_wrong_password_or_is_the_file_maybe_not_encrypted",
+      "value": "Could not decrypt file content. Did you use a wrong password? Is the file really encrypted with Markors AES encryption?"
+    },
+    {
+      "name": "password_already_set_setting_a_new_password_will_overwrite",
+      "value": "Password already set. Setting a new password will overwrite the existing password and you may not be able to access files anymore in case you forget the password."
+    },
+    {
+      "name": "code_block",
+      "value": "Code block"
+    },
+    {
+      "name": "add_completion_date",
+      "value": "Add completion date"
+    },
+    {
+      "name": "add_completion_date_for_todos_when_marking_them_as_done",
+      "value": "Add completion date for todos when marking them as done"
+    },
+    {
+      "name": "file_description_format",
+      "value": "File description format"
+    },
+    {
+      "name": "file_description_format_dialog",
+      "value": "Format for the description under each file in the file browser. Follows Android's SimpleDateFormat rules, with the addition of FS for showing file size. Leave blank to use the default format for your locale.\n\nExample input:\nFS yyyy MMM dd hh:mm:ss aa\nOutput format:\n30KB 2020 Mar 20 11:24:52 PM"
+    },
+    {
+      "name": "loading_default_value",
+      "value": "Loading default value"
+    },
+    {
+      "name": "file_settings",
+      "value": "File Settings"
+    },
+    {
+      "name": "search_and_replace",
+      "value": "Search / Replace"
+    },
+    {
+      "name": "replace",
+      "value": "Replace"
+    },
+    {
+      "name": "search_for",
+      "value": "Search for"
+    },
+    {
+      "name": "replace_with",
+      "value": "Replace with"
+    },
+    {
+      "name": "replace_once",
+      "value": "Replace (1)"
+    },
+    {
+      "name": "replace_all",
+      "value": "Replace all"
+    },
+    {
+      "name": "matches",
+      "value": "Matches"
+    },
+    {
+      "name": "search_replace_pattern_error_message",
+      "value": "Search or replace pattern error."
+    },
+    {
+      "name": "backup_settings",
+      "value": "Backup settings"
+    },
+    {
+      "name": "restore_settings",
+      "value": "Restore settings"
+    },
+    {
+      "name": "failed_to_create_backup",
+      "value": "Failed to create backup"
+    },
+    {
+      "name": "export_settings_to_json_file",
+      "value": "Export settings to json file"
+    },
+    {
+      "name": "import_settings_from_backup_json_file_on_success_the_app_is_restarted",
+      "value": "Import settings from backup json file. On success, the app is restarted."
+    },
+    {
+      "name": "failed_to_restore_settings_from_backup",
+      "value": "Failed to restore settings from backup"
+    },
+    {
+      "name": "newline_is_new_paragraph",
+      "value": "Newline = new paragraph"
+    },
+    {
+      "name": "search_in_content",
+      "value": "Search in content"
+    },
+    {
+      "name": "max_search_depth",
+      "value": "Search depth"
+    },
+    {
+      "name": "ignore_list",
+      "value": "Ignore list"
+    },
+    {
+      "name": "do_not_search_specified_files_and_folders",
+      "value": "Do not search specified files and folders.\nUse new line as separator.\nUse quotes for exact dir names: \"Test\".\nOr use Regex '^[.].*'\nExamples: ^\\\\..*\n\"test\"\n\"Test\"\n.*secret.*\n.*BACKUP.*\n.*.ini"
+    },
+    {
+      "name": "regex_search",
+      "value": "Regex search"
+    },
+    {
+      "name": "case_sensitive",
+      "value": "Case sensitive"
+    },
+    {
+      "name": "stop_search_after_first_match",
+      "value": "Stop search after first match"
+    },
+    {
+      "name": "regex_can_not_be_compiled",
+      "value": "Regex can not be compiled"
+    },
+    {
+      "name": "keep_both",
+      "value": "Keep both"
+    },
+    {
+      "name": "skip",
+      "value": "Skip"
+    },
+    {
+      "name": "overwrite",
+      "value": "Overwrite"
+    },
+    {
+      "name": "keep_both_all",
+      "value": "Keep both (all)"
+    },
+    {
+      "name": "skip_all",
+      "value": "Skip (all)"
+    },
+    {
+      "name": "overwrite_all",
+      "value": "Overwrite (all)"
+    },
+    {
+      "name": "copy_move_conflict_message",
+      "value": "'%s' already exists in %s"
+    },
+    {
+      "name": "additional_contexts_and_projects",
+      "value": "Additional contexts and projects"
+    },
+    {
+      "name": "enter_space_seperated_contexts_and_projects_these_will",
+      "value": "Enter space-separated @contexts and +projects. These will always be visible at todo.txt insert dialogs."
+    },
+    {
+      "name": "infinite",
+      "value": "Infinite"
+    },
+    {
+      "name": "browse_by_project",
+      "value": "Browse by project"
+    },
+    {
+      "name": "browse_by_context",
+      "value": "Browse by context"
+    },
+    {
+      "name": "insert_project",
+      "value": "Insert projects"
+    },
+    {
+      "name": "insert_context",
+      "value": "Insert contexts"
+    },
+    {
+      "name": "browse_todo",
+      "value": "Browse todo"
+    },
+    {
+      "name": "browse_by_priority",
+      "value": "Browse by priority"
+    },
+    {
+      "name": "browse_by_due_date",
+      "value": "Browse by due date"
+    },
+    {
+      "name": "due_overdue",
+      "value": "Overdue"
+    },
+    {
+      "name": "due_today",
+      "value": "Due today"
+    },
+    {
+      "name": "due_future",
+      "value": "Due in future"
+    },
+    {
+      "name": "completed",
+      "value": "Completed"
+    },
+    {
+      "name": "advanced_filtering",
+      "value": "Advanced filtering"
+    },
+    {
+      "name": "match_any",
+      "value": "Match Any"
+    },
+    {
+      "name": "match_all",
+      "value": "Match All"
+    },
+    {
+      "name": "dynamic_notebook_root_links",
+      "value": "Dynamic search for notebook root"
+    },
+    {
+      "name": "search_dynamically_for_notebook_root",
+      "value": "In order to follow wiki links, dynamically search for the notebook.zim file to identify the root directory for the current notebook. Check this if you use multiple zim notebooks or the notebook directory set in the app does not correspond to your zim notebook."
+    },
+    {
+      "name": "share_into_format_prefix_for_text_shared",
+      "value": "Format/Prefix for text shared into Markor. Follows Android's SimpleDateFormat rules.\n\nUse the placeholder {{text}} to position the shared text. If not specified, the shared text is appended and the format used as a prefix."
+    },
+    {
+      "name": "share_into_format",
+      "value": "Share into - Format"
+    },
+    {
+      "name": "attachment_folder_name",
+      "value": "Attachment folder name"
+    },
+    {
+      "name": "attachment_folder_name_desc",
+      "value": "Subfolder under the current folder where attachments will be saved. If left blank, attachments will be saved in the current folder."
+    },
+    {
+      "name": "auto_format",
+      "value": "Auto-format"
+    },
+    {
+      "name": "insert_snippet",
+      "value": "Insert snippet"
+    },
+    {
+      "name": "snippet_directory",
+      "value": "Snippet / Template directory"
+    },
+    {
+      "name": "error_could_not_open_file",
+      "value": "Error: Could not open file."
+    },
+    {
+      "name": "document_error_clip",
+      "value": "Error encountered: Text copied to clipboard."
+    },
+    {
+      "name": "wont_save_min_length",
+      "value": "Files with fewer than %d characters not saved automatically in order to prevent data loss."
+    },
+    {
+      "name": "advanced_filtering_help",
+      "value": "<small><a href=\"https://www.github.com/gsantner/markor/discussions/1940\">Advanced filtering syntax</a></small>"
+    },
+    {
+      "name": "filter",
+      "value": "Filter"
+    },
+    {
+      "name": "text_case",
+      "value": "Text Case"
+    },
+    {
+      "name": "toggle_case",
+      "value": "Toggle Case (Case→CASE→case)"
+    },
+    {
+      "name": "switch_case",
+      "value": "Switch Case (CaSe→cAsE)"
+    },
+    {
+      "name": "capitalize_words",
+      "value": "Capitalize Words (a note→A Note)"
+    },
+    {
+      "name": "capitalize_sentences",
+      "value": "Capitalize Sentences (a note→A note)"
+    },
+    {
+      "name": "use_tab_to_indent",
+      "value": "Indent lines with TAB key"
+    },
+    {
+      "name": "static_cursor",
+      "value": "Static cursor"
+    },
+    {
+      "name": "disable_cursor_blinking",
+      "value": "Disable cursor blinking"
+    },
+    {
+      "name": "folder_local",
+      "value": "Folder local"
+    }
+  ]
+}

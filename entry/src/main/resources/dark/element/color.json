@@ -1,0 +1,32 @@
+{
+  "color": [
+    {
+      "name": "colorPrimary",
+      "value": "#FF1E2135"
+    },
+    {
+      "name": "primary_text",
+      "value": "#DDFFFFFF"
+    },
+    {
+      "name": "secondary_text",
+      "value": "#FF9E9E9E"
+    },
+    {
+      "name": "file",
+      "value": "#FF9E9E9E"
+    },
+    {
+      "name": "folder",
+      "value": "#FF9E9E9E"
+    },
+    {
+      "name": "background",
+      "value": "#FF212121"
+    },
+    {
+      "name": "light_border",
+      "value": "#FF505050"
+    }
+  ]
+}

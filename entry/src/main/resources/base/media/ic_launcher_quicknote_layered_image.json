@@ -1,0 +1,6 @@
+{
+  "layered-image": {
+    "background": "$media:ic_launcher_quicknote_background",
+    "foreground": "$media:ic_launcher_quicknote_foreground"
+  }
+}

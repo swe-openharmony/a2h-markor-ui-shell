@@ -1,0 +1,6 @@
+{
+  "layered-image": {
+    "background": "$media:ic_launcher_linkbox_background",
+    "foreground": "$media:ic_launcher_linkbox_foreground"
+  }
+}
